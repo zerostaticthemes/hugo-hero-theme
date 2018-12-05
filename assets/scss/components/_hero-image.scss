@@ -1,0 +1,66 @@
+.hero-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-blend-mode: overlay;
+  background-color: $primary;
+  height: 400px;
+  position: relative;
+  .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .row {
+    height: inherit;
+  }
+  .hero-text {
+    flex: 0;
+    width: 90%;
+    color: #ffffff;
+    margin: auto 0;
+    h1 {
+      font-size: 3rem;
+      @include media-breakpoint-up(md) {
+        font-size: 4rem;
+        width: 80%;
+      }
+    }
+    h2 {
+      font-size: 2.2rem;
+      @include media-breakpoint-up(md) {
+        font-size: 2.4rem;
+      }
+    }
+    p {
+      font-size: 1.6rem;
+      line-height: 1.3;
+      @include media-breakpoint-up(md) {
+        font-size: 1.6rem;
+        width: 60%;
+      }
+    }
+  }
+  .hero-down {
+    flex: 0;
+    text-align: center;
+    opacity: 0.7;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  .hero-section {
+    text-transform: uppercase;
+    font-weight: normal;
+  }
+}
+.hero-image-fullscreen {
+  height: 100vh;
+}
+.hero-image-setheight {
+  height: 400px;
+}
+.hero-image-blend-overlay {
+  background-blend-mode: overlay;
+}
