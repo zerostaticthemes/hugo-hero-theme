@@ -1,0 +1,12 @@
+name = "Hero"
+license = "MIT"
+licenselink = "https://github.com/JugglerX/hugo-serif-theme/blob/master/LICENSE"
+description = ""
+homepage = "https://github.com/jugglerx/hugo-serif-theme"
+tags = ["responsive","minimal","business","company","bootstrap"]
+features = ["services","team","testimonials"]
+min_version = 0.51
+
+[author]
+  name = "Robert Austin"
+  homepage = "https://www.zerostatic.io"

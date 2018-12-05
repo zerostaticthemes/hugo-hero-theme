@@ -1,0 +1,23 @@
+.service-single {
+  h1.title {
+    font-size: 3rem;
+    font-family: $font-family-heading;
+    color: $primary;
+  }
+  .content {
+    > p {
+      &:first-of-type {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        margin-bottom: 40px;
+        font-weight: 300;
+        @include media-breakpoint-up(md) {
+          font-size: 1.4rem;
+          line-height: 1.4;
+          margin-bottom: 40px;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}

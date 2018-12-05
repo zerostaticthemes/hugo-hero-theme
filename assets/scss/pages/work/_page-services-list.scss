@@ -1,0 +1,18 @@
+.page-services-list {
+  .page-intro {
+    h1 {
+      font-size: 1.6rem;
+      font-weight: regular;
+    }
+    p {
+      @include media-breakpoint-up(md) {
+        width: 70%;
+      }
+      &:first-of-type {
+        font-size: 1.3rem;
+        line-height: 1.2;
+        color: #666;
+      }
+    }
+  }
+}

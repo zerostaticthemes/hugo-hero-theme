@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="203px" height="29px" viewBox="0 0 203 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="Lato-SemiBold, Lato" font-size="38" font-weight="500" letter-spacing="-1.9">
+        <g id="logo" transform="translate(-3.000000, -10.000000)">
+            <text id="HUGOHERO">
+                <tspan x="0" y="38" fill="#2A2A2A">HUGO</tspan>
+                <tspan x="107.901" y="38" fill="#1C3ED3">HERO</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
