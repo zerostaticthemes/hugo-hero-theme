@@ -1,18 +1,19 @@
-<div id="hero" class="hero-image hero-image-fullscreen" style="background-image: url('{{ .Site.BaseURL }}{{ .background }}');">
-  <div class="container ">
-    <div class="hero-text">
-      <h1>Hero - Hugo Small Business Theme</h1>
-      <p>A small business theme with bold clean lines, full-screen images and fullwidth block sections.</p>
+<div class="hero-image hero-image-fullscreen" style="background-image: url('{{ .background | relURL }}');">
+    <div class="container ">
+      <div class="hero-text">
+        <span class="hero-section">{{ .section }}</span>
+        <h1>{{ .heading }}</h1>
+        <p>{{ .subheading }}</p>
+      </div>
+      <div class="hero-down">
+        <a href="#home">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 898.75 533.751" transform="matrix(.69 0 0 .69 15.5 15.5)" fill="#fff">
+                <path d="M224.687 309.061L0 84.372l42.186-42.186L84.372 0l182.815 182.811L450 365.622l182.5-182.496L815 .63l41.874 41.874L898.75 84.38 674.062 309.065 449.373 533.751 224.687 309.06z"/>
+            </svg>
+          </svg>
+        </a>
+      </div>
     </div>
-    <div class="hero-down">
-      <a href="#home">
-      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 898.75 533.751" transform="matrix(.69 0 0 .69 15.5 15.5)" fill="#fff">
-            <path d="M224.687 309.061L0 84.372l42.186-42.186L84.372 0l182.815 182.811L450 365.622l182.5-182.496L815 .63l41.874 41.874L898.75 84.38 674.062 309.065 449.373 533.751 224.687 309.06z"/>
-        </svg>
-      </svg>
-    </a>
   </div>
-  </div>
-</div>
-  
+    
