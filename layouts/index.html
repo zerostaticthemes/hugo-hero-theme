@@ -5,17 +5,15 @@
 
 {{ define "main" }}
 
-{{ partial "hero-image-fullscreen.html" (dict "background" "images/jason-blackeye-1191801-unsplash.jpg") }}
+{{ partial "hero-image-fullscreen.html" (dict "background" "images/jason-blackeye-1191801-unsplash.jpg" "heading" "Hero - Hugo Small Business Theme" "subheading" "A small business theme with bold clean lines, fullscreen images and fullwidth sections."  "content" .)}}
 
 <div id="home" class="strip bg-cover bg-position-top bg-overlay pt-15 pb-15" style="background-image: url('{{ .Site.BaseURL }}images/kevin-bhagat-461952-unsplash.jpg');">
   <div class="container">
     <div class="row">
       <div class="col-12 col-md-6 offset-md-6">
-        <div class="about">
-          <h2 class="text-primary text-capitalize">We Help Business Grow</h2>
-          <p>Lorem ipsum dolor sit amet, et essent mediocritatem quo, choro volumus oporteat an mei. Numquam dolores mel eu, mea docendi omittantur et, mea ea duis erat. Elit melius cu ius. Per ex novum tantas putant, ei his nullam aliquam apeirian. Aeterno quaestio constituto sea an, no eum intellegat assueverit. Ex sea tritani phaedrum, eruditi iracundia ne his, ad his iusto consulatu imperdiet.</p>
-          <a class="button" href="{{ .Site.BaseURL }}work">Our Work</a>
-        </div>
+        <h2 class="text-primary text-capitalize">We Help Business Grow</h2>
+        <p>Lorem ipsum dolor sit amet, et essent mediocritatem quo, choro volumus oporteat an mei. Numquam dolores mel eu, mea docendi omittantur et, mea ea duis erat. Elit melius cu ius. Per ex novum tantas putant, ei his nullam aliquam apeirian. Aeterno quaestio constituto sea an, no eum intellegat assueverit. </p>
+        <a class="button" href="{{ .Site.BaseURL }}work">Our Work</a>
       </div>
     </div>
   </div>
@@ -26,7 +24,7 @@
 <div class="container pt-8 pt-md-10 pb-8 pt-md-10">
   <div class="row justify-content-start">
     <div class="col-12">
-      <h2 class="title-3 text-center mb-3">Our Services</h2>
+      <h2 class="text-center mb-3">Our Services</h2>
     </div>
     {{ range first 6 (sort $services ".Params.weight") }}
     <div class="col-12 col-md-4 mb-1">
@@ -44,7 +42,7 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-12 col-md-8 text-center text-white">
-          <h2 class="text-capitalize">Our Difference</h2>
+          <h2>Our Difference</h2>
           <p>Lorem ipsum dolor sit amet, et essent mediocritatem quo, choro volumus oporteat an mei. ipsum dolor sit amet, et essent mediocritatem quo, </p>
           <a class="button button-white" href="{{ .Site.BaseURL }}about">About Us</a>
       </div>
