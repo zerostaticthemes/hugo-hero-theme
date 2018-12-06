@@ -1,10 +1,10 @@
 name = "Hero"
 license = "MIT"
-licenselink = "https://github.com/JugglerX/hugo-serif-theme/blob/master/LICENSE"
+licenselink = "https://github.com/JugglerX/hugo-hero-theme/blob/master/LICENSE"
 description = ""
-homepage = "https://github.com/jugglerx/hugo-serif-theme"
-tags = ["responsive","minimal","business","company","bootstrap"]
-features = ["services","team","testimonials"]
+homepage = "https://github.com/jugglerx/hugo-hero-theme"
+tags = ["responsive","minimal","business","company","bootstrap","multipurpose", "fullwidth","zerostatic"]
+features = ["services","work","fullwidth"]
 min_version = 0.51
 
 [author]
