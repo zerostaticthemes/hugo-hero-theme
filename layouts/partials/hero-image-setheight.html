@@ -1,4 +1,4 @@
-<div id="hero" class="hero-image hero-image-setheight" style="background-image: url('{{ .background | relURL }}');">
+<div id="hero" class="hero-image hero-image-setheight" style="background-image: url('{{ .Site.BaseURL }}{{ .background | relURL }}');">
   <div class="container ">
     <div class="hero-text">
       <span class="hero-section">{{ .section }}</span>

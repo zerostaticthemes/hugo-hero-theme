@@ -12,14 +12,14 @@ theme = "hugo-serif-theme"
     weight = 1
 
 [[menu.main]]
-    name = "Team"
-    url = "/team/"
+    name = "Work"
+    url = "/work/"
     weight = 2
 
 [[menu.main]]
-	name = "Testimonials"
-	url = "/testimonials/"
-	weight = 3
+    name = "About"
+    url = "/about/"
+    weight = 3
 
 [[menu.main]]
     name = "Contact"
