@@ -1,6 +1,6 @@
 # Hugo Hero Theme
 
-Hero is a multipurpose business theme with bold clean lines, fullscreen images and fullwidth sections. It contains content types and functionality for a archetypical small business.
+Hero is a multipurpose theme with fullscreen hero images and fullwidth sections. It contains content types for a business or portfolio site.
 
 [Live Demo](https://hugo-hero.netlify.com/)
 
@@ -8,20 +8,41 @@ Hero is a multipurpose business theme with bold clean lines, fullscreen images a
 
 ## Theme features
 
-- Fullscreen and fixed height hero image partials that use paramaters
-- Services (Content Type)
-- Work (Content Type)
-- Masonry style gallery on Work single pages
+### Content Types
+
+- Services (Markdown)
+- Work/Portfolio (Markdown)
 - Features (Data)
 - About (Single Page)
+
+### Features
+
+- Full-width/full-height hero images as a partial. Partial accepts a background-image, no background-image, background-image with blue overlay or just a blue color background.
+- Fixed height hero images as a partial
+- Full width strips on homepage
+- Single 'About' page with alternating full-width sections
+- Portfolio pages contain a CSS only masonary image gallery
+
+### CSS
+
 - SCSS (Hugo Pipelines)
 - Responsive design
 - Bootstrap 4 grid and media queries only
-- Responsive menu managed in `config.toml`
+
+### Speed
+
 - 100/100 Google Lighthouse speed score
-- Under 30KB without images or 80KB with images and illustrations ⚡
+- 21KB without images ⚡
+- Vanilla JS only
+
+### Menu
+
+- Responsive mobile menu managed in `config.toml`
+
+### Content
+
 - Robust example content included
-- Royalty free images included (Unsplash)
+- Royalty free images included
 
 ## Installation
 

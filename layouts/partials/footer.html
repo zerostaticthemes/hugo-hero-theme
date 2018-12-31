@@ -1,11 +1,11 @@
-<div class="footer-strip">
+<div class="footer">
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <div class="footer">
+        <div class="footer-inner">
           <ul class="footer-menu">
-            <li><a href="/">Home</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li><a href="{{ .Site.BaseURL }}">Home</a></li>
+            <li><a href="{{ .Site.BaseURL }}contact">Contact</a></li>
             <li class="copyright">© {{ now.Format "2006" }} {{.Site.Title}}</li>
           </ul>
         </div>
