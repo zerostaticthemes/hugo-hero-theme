@@ -5,9 +5,9 @@
 
 {{ define "main" }}
 
-{{ partial "hero-image-fullscreen.html" (dict "background" "images/jason-blackeye-1191801-unsplash.jpg" "heading" "Hero - Hugo Small Business Theme" "subheading" "A small business theme with bold clean lines, fullscreen images and fullwidth sections."  "content" .)}}
+{{ partial "hero-image-fullscreen.html" (dict "background" "images/jason-blackeye-1191801-unsplash.jpg" "heading" "Hero - Hugo Small Business Theme" "subheading" "Hero is a multipurpose Hugo theme with fullscreen hero images and fullwidth sections. It contains content types for a business or portfolio site."  "content" .)}}
 
-<div id="home" class="strip bg-cover bg-position-top bg-overlay pt-15 pb-15" style="background-image: url('{{ .Site.BaseURL }}images/kevin-bhagat-461952-unsplash.jpg');">
+<div id="home" class="strip bg-cover bg-position-top bg-overlay pt-17 pb-17" style="background-image: url('{{ .Site.BaseURL }}images/kevin-bhagat-461952-unsplash.jpg');">
   <div class="container">
     <div class="row">
       <div class="col-12 col-md-6 offset-md-6">
@@ -21,7 +21,7 @@
 
 {{ $services := where (where .Site.RegularPages "Type" "services") ".Params.featured" true }}
 {{if gt (len $services) 0}}
-<div class="container pt-8 pt-md-10 pb-8 pt-md-10">
+<div class="container pt-8 pb-8 pb-md-12 pt-md-12">
   <div class="row justify-content-start">
     <div class="col-12">
       <h2 class="text-center mb-3">Our Services</h2>
@@ -38,8 +38,8 @@
 </div>
 {{end}}
 
-<div id="home" class="strip bg-primary pt-8 pb-8">
-  <div class="container">
+<div id="home" class="strip strip-primary">
+  <div class="container pt-8 pb-8 pb-md-12 pt-md-12">
     <div class="row justify-content-center">
       <div class="col-12 col-md-8 text-center text-white">
           <h2>Our Difference</h2>

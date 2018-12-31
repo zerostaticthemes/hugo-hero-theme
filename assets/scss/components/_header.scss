@@ -1,5 +1,4 @@
 .header {
-  // height: 50px;
   color: $primary;
   background-color: #ffffff;
   display: flex;
@@ -11,18 +10,9 @@
     justify-content: space-between;
     align-items: center;
   }
-  .header-social {
-    height: inherit;
-    display: none;
-    @include media-breakpoint-up(lg) {
-      display: block;
-    }
+  &.header-absolute {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
   }
-}
-.header-absolute {
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 10;
-  position: absolute;
 }

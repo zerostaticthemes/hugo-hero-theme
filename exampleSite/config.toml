@@ -1,10 +1,10 @@
-baseURL = "/"
+baseURL = "www.example.com"
 languageCode = "en-us"
-title = "Hugo Hero"
-theme = "hugo-hero-theme"
+title = "Hugo Serif Theme"
+theme = "hugo-serif-theme"
 
 [params]
-#google_analytics_id=""
+    google_analytics_id=""
 
 [[menu.main]]
 	name = "Services"
@@ -12,14 +12,14 @@ theme = "hugo-hero-theme"
     weight = 1
 
 [[menu.main]]
-    name = "Work"
-    url = "/work/"
+    name = "Team"
+    url = "/team/"
     weight = 2
 
 [[menu.main]]
-    name = "About"
-    url = "/about/"
-    weight = 3
+	name = "Testimonials"
+	url = "/testimonials/"
+	weight = 3
 
 [[menu.main]]
     name = "Contact"
