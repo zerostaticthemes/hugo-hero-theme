@@ -3,8 +3,8 @@ license = "MIT"
 licenselink = "https://github.com/JugglerX/hugo-hero-theme/blob/master/LICENSE"
 description = ""
 homepage = "https://github.com/jugglerx/hugo-hero-theme"
-tags = ["responsive","minimal","business","company","bootstrap","multipurpose", "fullwidth","zerostatic"]
-features = ["services","work","fullwidth"]
+tags = ["responsive","minimal","clean","company","portfolio","bootstrap","zerostatic"]
+features = ["services","work","fullwidth","hero images"]
 min_version = 0.51
 
 [author]
