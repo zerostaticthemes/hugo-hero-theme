@@ -1,4 +1,5 @@
-<div class="hero-image hero-image-fullscreen" style="background-image: url('{{ .Site.BaseURL }}{{ .background }}');">
+
+<div class="hero-image hero-image-fullscreen" style="background-image: url('{{ .content.Site.BaseURL }}{{ .background }}');">
     <div class="container ">
       <div class="hero-text">
         <span class="hero-section">{{ .section }}</span>
@@ -16,4 +17,4 @@
       </div>
     </div>
   </div>
-    
+  {{ .Site.BaseURL }}
