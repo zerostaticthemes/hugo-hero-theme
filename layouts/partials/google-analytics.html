@@ -1,11 +1,24 @@
-{{ if .Site.Params.google_analytics_id }}
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.google_analytics_id }}"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  
-    gtag('config', '{{ .Site.Params.google_analytics_id }}');
-  </script>
+{{ if eq (getenv "HUGO_ENV") "production" }}
+  {{ if isset (getenv "HUGO_GOOGLE_ANALYTICS_ID") }}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{getenv "HUGO_GOOGLE_ANALYTICS_ID" }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', '{{getenv "HUGO_GOOGLE_ANALYTICS_ID" }}');
+    </script>
+  {{ else }}
+    {{ if .Site.Params.google_analytics_id }}
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.google_analytics_id }}"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{ .Site.Params.google_analytics_id }}');
+      </script>
+    {{ end }}
+  {{ end}}
 {{ end }}
