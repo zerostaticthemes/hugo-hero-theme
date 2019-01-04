@@ -5446,10 +5446,6 @@ ol {
     display: flex;
     justify-content: space-between;
     align-items: center; }
-  .header.header-absolute {
-    position: absolute;
-    z-index: 100;
-    width: 100%; }
 
 .footer {
   background: #43454d;
