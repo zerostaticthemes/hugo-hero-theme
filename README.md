@@ -4,7 +4,7 @@ Hero is a multipurpose theme with fullscreen hero images and fullwidth sections.
 
 [Live Demo](https://hugo-hero.netlify.com/)
 
-![Hugo Hero Theme screenshot](https://github.com/JugglerX/hugo-hero-theme/blob/master/images/screenshot-with-border.png)
+![Hugo Hero Theme screenshot](https://github.com/JugglerX/hugo-hero-theme/blob/master/images/screenshot-with-border.jpg)
 
 ## Theme features
 
