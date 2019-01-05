@@ -6,7 +6,7 @@ weight: 1
 heroHeading: 'Fall Plaza'
 heroSubHeading: 'Revitalising a public space in Spain.'
 heroBackground: 'work/work1.jpg'
-thumbnail: "work/work1.jpg"
+thumbnail: "work/work1-thumbnail.jpg"
 images: ['https://source.unsplash.com/random/?nature', 
 'https://source.unsplash.com/random/?travel','https://source.unsplash.com/random/?architecture','https://source.unsplash.com/random/?buildings','https://source.unsplash.com/random/?city']
 ---

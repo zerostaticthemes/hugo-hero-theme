@@ -1,12 +1,12 @@
 ---
-title: 'Abstract Tenaments'
+title: 'Cargo Terminal'
 date: 2018-11-18T12:33:46+10:00
 draft: false
 weight: 3
-heroHeading: 'Abstract Tenaments'
-heroSubHeading: 'Chaning our perceptions about public housing.'
+heroHeading: 'Cargo Terminal'
+heroSubHeading: 'Dockyard construction planning and review.'
 heroBackground: 'work/work3.jpg'
-thumbnail: "work/work3.jpg"
+thumbnail: "work/work3-thumbnail.jpg"
 images: ['https://source.unsplash.com/random/?nature', 
 'https://source.unsplash.com/random/?travel','https://source.unsplash.com/random/?architecture','https://source.unsplash.com/random/?buildings','https://source.unsplash.com/random/?city']
 ---

@@ -6,7 +6,7 @@ featured: true
 draft: false
 heroHeading: 'Mergers & Acquisitions'
 heroSubHeading: 'Thinking of acquiring another business? Let us guide you through the process.'
-heroBackground: 'services/service4.jpg'
+heroBackground: 'services/service2.jpg'
 ---
 
 Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum

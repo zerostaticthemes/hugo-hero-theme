@@ -10,4 +10,17 @@
     justify-content: space-between;
     align-items: center;
   }
+  &.header-absolute {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+  }
+}
+
+.lock-scroll {
+  .header {
+    &.header-absolute {
+      position: static;
+    }
+  }
 }
