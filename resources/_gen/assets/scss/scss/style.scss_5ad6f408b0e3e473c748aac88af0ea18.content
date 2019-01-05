@@ -5446,6 +5446,13 @@ ol {
     display: flex;
     justify-content: space-between;
     align-items: center; }
+  .header.header-absolute {
+    position: absolute;
+    z-index: 10;
+    width: 100%; }
+
+.lock-scroll .header.header-absolute {
+  position: static; }
 
 .footer {
   background: #43454d;
@@ -5623,41 +5630,6 @@ ol {
           transition: all 225ms ease-in 0s;
           color: #ffffff; }
 
-.button_container {
-  position: fixed;
-  top: 5%;
-  right: 2%;
-  height: 27px;
-  width: 35px;
-  cursor: pointer;
-  z-index: 100;
-  transition: opacity 0.25s ease; }
-  .button_container:hover {
-    opacity: 0.7; }
-  .button_container.active .top {
-    transform: translateY(11px) translateX(0) rotate(45deg);
-    background: #ffffff; }
-  .button_container.active .middle {
-    opacity: 0;
-    background: #ffffff; }
-  .button_container.active .bottom {
-    transform: translateY(-11px) translateX(0) rotate(-45deg);
-    background: #ffffff; }
-  .button_container span {
-    background: #1c3ed3;
-    border: none;
-    height: 5px;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: all 0.35s ease;
-    cursor: pointer; }
-    .button_container span:nth-of-type(2) {
-      top: 11px; }
-    .button_container span:nth-of-type(3) {
-      top: 22px; }
-
 .main-menu-mobile {
   position: fixed;
   background: #1c3ed3;
@@ -5677,7 +5649,7 @@ ol {
     opacity: 0.9;
     visibility: visible;
     height: 100%;
-    z-index: 10; }
+    z-index: 20; }
     .main-menu-mobile.open li {
       animation: fadeInRight 0.5s ease forwards;
       animation-delay: 0.35s; }
@@ -5764,7 +5736,7 @@ ul.social {
 .hamburger {
   padding: 10px 0 10px 10px;
   outline: none;
-  z-index: 10;
+  z-index: 30;
   cursor: pointer; }
   @media (min-width: 768px) {
     .hamburger {

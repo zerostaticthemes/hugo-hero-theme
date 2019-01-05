@@ -1,12 +1,12 @@
 ---
-title: 'Royal QLD Hospital'
+title: 'Modern Hospital'
 date: 2018-11-18T12:33:46+10:00
 draft: false
 weight: 2
-heroHeading: 'Royal QLD Hospital'
-heroSubHeading: 'Extensions to the childrens hospital wing'
+heroHeading: 'Modern Hospital Design'
+heroSubHeading: 'Designing a new modern hospital wing'
 heroBackground: 'work/work2.jpg'
-thumbnail: "work/work2.jpg"
+thumbnail: "work/work2-thumbnail.jpg"
 images: ['https://source.unsplash.com/random/?nature', 
 'https://source.unsplash.com/random/?travel','https://source.unsplash.com/random/?architecture','https://source.unsplash.com/random/?buildings','https://source.unsplash.com/random/?city']
 ---

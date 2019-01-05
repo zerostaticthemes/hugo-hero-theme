@@ -6,7 +6,7 @@ featured: true
 draft: false
 heroHeading: 'Business Sales'
 heroSubHeading: 'We can help value your business and prepare it for sale.'
-heroBackground: 'services/service3.jpg'
+heroBackground: 'services/service1.jpg'
 ---
 
 Cyanee nec pedicis positi. Esse et diem forte quoque et ieiunia
