@@ -23,9 +23,14 @@
   <div class="container">
     <div class="row">
       <div class="col-12 col-md-6 offset-md-6">
-        <h2 class="text-primary text-capitalize">We Help Business Grow</h2>
-        <p>Lorem ipsum dolor sit amet, et essent mediocritatem quo, choro volumus oporteat an mei. Numquam dolores mel eu, mea docendi omittantur et, mea ea duis erat. Elit melius cu ius. Per ex novum tantas putant, ei his nullam aliquam apeirian. Aeterno quaestio constituto sea an, no eum intellegat assueverit. </p>
-        <a class="button" href="{{ .Site.BaseURL }}work">Our Work</a>
+        {{ $headless := .Site.GetPage "/homepage" }}
+        {{ $reusablePages := $headless.Resources.ByType "page" }}
+        {{ $reusablePages := sort $reusablePages ".Params.weight" }}
+        {{ range first 1 $reusablePages }}
+        <h2 class="text-primary text-capitalize">{{ .Title }}</h2>
+        <p>{{ .Content }}</p>
+        <a class="button" href="{{ .Site.BaseURL }}work">{{ .Params.button }}</a>
+        {{ end }}
       </div>
     </div>
   </div>
@@ -54,9 +59,11 @@
   <div class="container pt-8 pb-8 pb-md-12 pt-md-12">
     <div class="row justify-content-center">
       <div class="col-12 col-md-8 text-center text-white">
-          <h2>Our Difference</h2>
-          <p>Lorem ipsum dolor sit amet, et essent mediocritatem quo, choro volumus oporteat an mei. ipsum dolor sit amet, et essent mediocritatem quo, </p>
-          <a class="button button-white" href="{{ .Site.BaseURL }}about">About Us</a>
+        {{ range first 1 (after 1 $reusablePages) }}
+          <h2>{{ .Title }}</h2>
+          <p>{{ .Content }}</p>
+          <a class="button button-white" href="{{ .Site.BaseURL }}about">{{ .Params.button }}</a>
+          {{ end }}
       </div>
     </div>
   </div>
