@@ -48,8 +48,10 @@ Hero is a multipurpose theme with fullscreen hero images and fullwidth sections.
 
 Inside the folder of your Hugo site run:
 
-    $ cd themes
-    $ git clone https://github.com/jugglerx/hugo-hero-theme.git
+```
+cd themes
+git clone https://github.com/jugglerx/hugo-hero-theme.git
+```
 
 For more information read the official [setup guide](//gohugo.io/overview/installing/) of Hugo.
 
@@ -63,10 +65,11 @@ The fastest way to get started is to copy the example content. Copy the contents
 
 ### Edit config
 
-After you copy the `config.toml` into the root folder of your Hugo site you will need to update the `baseURL`
+After you copy the `config.toml` into the root folder of your Hugo site you will need to update the `baseURL` and the `themesDir`
 
 ```
 baseURL = "/"
+themesDir = "themes" // you can also remove this line
 ```
 
 ## Running Hugo
