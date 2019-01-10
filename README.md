@@ -65,11 +65,12 @@ The fastest way to get started is to copy the example content. Copy the contents
 
 ### Edit config
 
-After you copy the `config.toml` into the root folder of your Hugo site you will need to update the `baseURL` and the `themesDir`
+After you copy the `config.toml` into the root folder of your Hugo site you will need to update the `baseURL` and the `themesDir`. You will also need to add the `theme`
 
 ```
 baseURL = "/"
 themesDir = "themes" // you can also remove this line
+theme = "hugo-hero-theme" // or whatever you rename the theme folder too
 ```
 
 ## Running Hugo
@@ -87,3 +88,13 @@ hugo server
 ```
 
 Now enter [`localhost:1313`](http://localhost:1313) in the address bar of your browser.
+
+## Running Hugo from within the theme
+
+If you have just cloned/downloaded the theme and have not placed it inside an existing Hugo site you can still run the theme locally using the following command. This is a less standard approach but may be convienent for some users, particulary those who wish to maintain just a theme repo and deploy to Netlify.
+
+```
+hugo server --source exampleSite --config exampleSite/config.toml --themesDir ../.. --theme hugo-hero-theme
+```
+
+See this discussion on how to deploy your site on Netlify from the `exampleSite` folder - https://discourse.gohugo.io/t/deploy-your-theme-to-netlify/15508
