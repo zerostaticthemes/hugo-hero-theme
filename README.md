@@ -89,12 +89,14 @@ hugo server
 
 Now enter [`localhost:1313`](http://localhost:1313) in the address bar of your browser.
 
-## Running Hugo from within the theme
+## Running Hugo From within exampleSite
 
-If you have just cloned/downloaded the theme and have not placed it inside an existing Hugo site you can still run the theme locally using the following command. This is a less standard approach but may be convienent for some users, particulary those who wish to maintain just a theme repo and deploy to Netlify.
+If you have just cloned/downloaded the theme and have not placed it inside an existing Hugo site you can still run the theme against the `exampleSite` locally using the following command. 
 
 ```
 hugo server --source exampleSite --config exampleSite/config.toml --themesDir ../.. --theme hugo-hero-theme
 ```
+
+This is a less standard approach but may be convenient for some, particularly those who wish to maintain a single theme repo and also deploy a live demo to Netlify.
 
 See this discussion on how to deploy your site on Netlify from the `exampleSite` folder - https://discourse.gohugo.io/t/deploy-your-theme-to-netlify/15508
