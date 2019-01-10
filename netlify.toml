@@ -1,5 +1,14 @@
+[build]
+publish = "exampleSite/public"
+command = """hugo \
+  --source exampleSite \
+  --config exampleSite/config.toml \
+  --themesDir ../.. \
+  --theme repo \
+  --baseURL https://silly-davinci-ac8797.netlify.com"""
+
 [context.deploy-preview.environment]
   HUGO_VERSION = "0.51"
 
 [context.production.environment]
-  HUGO_VERSION = "0.51"
+HUGO_VERSION = "0.51"
