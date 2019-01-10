@@ -5437,7 +5437,7 @@ ol {
 
 .header {
   color: #1c3ed3;
-  background-color: #ffffff;
+  background-color: blue;
   display: flex;
   justify-content: space-between;
   align-items: center;
