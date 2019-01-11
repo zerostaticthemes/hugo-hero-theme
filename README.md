@@ -44,28 +44,40 @@ Hero is a multipurpose theme with fullscreen hero images and fullwidth sections.
 - Robust example content included
 - Royalty free images included
 
+
 ## Installation
 
-Inside the folder of your Hugo site run:
+### Installing Hugo
+
+If you have not already installed Hugo on your machine please follow the official [installation guide](https://gohugo.io/getting-started/installing/) - Once Hugo is installed you may continue with the steps below.
+
+### Create a new Hugo Site
+
+Create a new Hugo site
 
 ```
+hugo new site mynewsite
+```
+
+This will create a new Hugo site in the folder `mynewsite`. Next you need to install this theme in the sites themes folder `mynewsites/themes` 
+
+You may do this by git cloning this repo into the `themes` folder. 
+
+```
+cd mynewsite
 cd themes
 git clone https://github.com/jugglerx/hugo-hero-theme.git
 ```
 
-For more information read the official [setup guide](//gohugo.io/overview/installing/) of Hugo.
+Alternatively you may download the .zip file located here https://github.com/JugglerX/hugo-hero-theme/archive/master.zip. Extract the .zip inside the `themes` folder. Rename the theme from `hugo-hero-theme-master` -> `hugo-hero-theme`. You should end up with the following folder structure `mynewsites/themes/hugo-hero-theme`
 
-## Getting started
-
-After installing the Hero theme successfully it requires a just a few more steps to get your site finally running.
-
-### Adding example content
+### Adding the example content
 
 The fastest way to get started is to copy the example content. Copy the contents of the `exampleSite` folder to the root folder of your Hugo site. This theme comes with content for the following content types: `services` and `work`. The `about` us page is a single page with alternating fullwidth sections. It includes JSON data for `features` and `contact`. It also includes the `config.toml` file which has an example menu.
 
-### Edit config
+### Configuring the theme
 
-After you copy the `config.toml` into the root folder of your Hugo site you will need to update the `baseURL` and the `themesDir`. You will also need to add the `theme`
+After you copy the `config.toml` into the root folder of your Hugo site you will need to update the `baseURL`, `themesDir` and `theme` values in the `config.toml`
 
 ```
 baseURL = "/"
@@ -73,7 +85,7 @@ themesDir = "themes" // you can also remove this line
 theme = "hugo-hero-theme" // or whatever you rename the theme folder too
 ```
 
-## Running Hugo
+### Running Hugo
 
 After installing the theme, generate the Hugo site.
 
