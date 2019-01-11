@@ -5,7 +5,7 @@ command = """hugo \
   --config exampleSite/config.toml \
   --themesDir ../.. \
   --theme repo \
-  --baseURL https://silly-davinci-ac8797.netlify.com/"""
+  --baseURL https://hugo-hero.netlify.com/"""
 
 [context.deploy-preview.environment]
   HUGO_VERSION = "0.51"
