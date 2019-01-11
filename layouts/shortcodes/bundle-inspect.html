@@ -1,0 +1,4 @@
+Bundled Content
+{{ range .Page.Resources.ByType "page"}}
+{{ .Title }}: {{ .Content}}
+{{ end }}

@@ -4,7 +4,18 @@ title = "Hugo Hero"
 themesDir = "../.."
 
 [params]
-    google_analytics_id=""
+  google_analytics_id=""
+
+  [params.homepage_meta_tags]
+    meta_description = "Hero is a multipurpose Hugo theme with fullscreen hero images and fullwidth sections. It contains content types for a business or portfolio site."
+    meta_og_title = "Hugo Hero Theme"
+    meta_og_type = "website"
+    meta_og_url = "https://hugo-hero.netlify.com"
+    meta_og_image = "https://github.com/JugglerX/hugo-hero-theme/blob/master/images/tn.png"
+    meta_og_description = "Hero is a multipurpose Hugo theme with fullscreen hero images and fullwidth sections. It contains content types for a business or portfolio site."
+    meta_twitter_card = "summary"
+    meta_twitter_site = "@zerostaticio"
+    meta_twitter_creator = "@zerostaticio"
 
 [[menu.main]]
 	name = "Services"

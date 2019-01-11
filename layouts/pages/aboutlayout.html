@@ -1,0 +1,63 @@
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-contact{{ end }}
+{{ define "header_classes" }}{{ end }}
+
+{{ define "main" }}
+{{ partial "hero-image-fullscreen.html" (dict "background" "images/kevin-lanceplaine-243768-unsplash.jpg" "heading" "About Us" "subheading" "Established in 1985, we're a team of advisors that puts your business first."  "content" .)}}
+
+  
+<div id="home" class="strip bg-cover bg-position-center bg-overlay pt-15 pb-15" style="background-image: url('{{ .Site.BaseURL }}images/todd-diemer-284465-unsplash.jpg');">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6">
+          <h2 class="text-primary text-capitalize">No Limits </h2>
+          <p>Lorem ipsum dolor sit amet, et essent mediocritatem quo, choro volumus oporteat an mei. Numquam dolores mel eu, mea docendi omittantur et, mea ea duis erat. Elit melius cu ius. Per ex novum tantas putant, ei his nullam aliquam apeirian. Aeterno quaestio constituto sea an, no eum intellegat assueverit. </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container pt-8 pb-8 pt-md-10 pb-md-10">
+  <div class="row justify-content-center">
+    {{ range .Site.Data.features }}
+    <div class="col-12 col-md-6 col-lg-4 mb-2">
+      <div class="feature">
+        {{ if .image }}<div class="feature-image"><img alt="{{ .title }} logo" src="{{ $.Site.BaseURL }}{{ .image }}" /></div> {{ end }}
+        <h2 class="feature-title">{{ .title }}</h2>
+        <div class="feature-content">{{ .description }}</div>
+      </div>
+    </div>
+    {{end}}
+  </div>
+</div>
+
+
+<div class="strip bg-cover bg-position-center bg-overlay pt-15 pb-15" style="background-image: url('{{ .Site.BaseURL }}images/adrian-infernus-1198884-unsplash.jpg');">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 mb-2">
+          <h2 class="text-primary text-capitalize">Integrity & Performance</h2>
+      </div>
+      <div class="col-12 col-md-6 ">
+          <p>Lorem ipsum dolor sit amet, et essent mediocritatem quo, choro volumus oporteat an mei. Numquam dolores mel eu, mea docendi omittantur et, mea ea duis erat. Elit melius cu ius. Per ex novum tantas putant, ei his nullam aliquam apeirian. Aeterno quaestio constituto sea an, no eum intellegat assueverit. </p>
+      </div>
+      <div class="col-12 col-md-6">
+          <p>Numquam dolores mel eu, mea docendi omittantur et, mea ea duis erat. Elit melius cu ius. Per ex novum tantas putant, ei his nullam aliquam apeirian. Aeterno quaestio constituto sea an, no eum intellegat assueverit. </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="strip bg-primary pt-8 pb-8">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 text-center text-white">
+          <h2>Contact Us</h2>
+          <p>Lorem ipsum dolor sit amet, et essent mediocritatem quo, choro volumus oporteat an mei. ipsum dolor sit amet, et essent mediocritatem quo, </p>
+          <a class="button button-white" href="{{ .Site.BaseURL }}contact">Contact</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{ end }}

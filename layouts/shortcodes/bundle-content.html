@@ -1,0 +1,16 @@
+
+{{ $bundle := .Get 0 }}
+{{ $match := .Get 1 }}
+{{ $page := .Page.Site.GetPage $bundle }}
+{{ $page }}
+{{ with $page }}
+{{ $resource := $page.Resources.GetMatch (printf "**%s*" $match ) }}
+{{ with $resource }}
+<h3>Resource in shortcode</h3>
+<ul>
+<li>Title: {{ .Title }}</li>
+<li>Content: {{ .Content }}</li>
+<li>Summary: {{ .Summary }}</li>
+</ul>
+{{ end }}
+{{ end }}
