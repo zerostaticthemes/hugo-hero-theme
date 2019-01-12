@@ -15,14 +15,20 @@ Hero is a multipurpose theme with fullscreen hero images and fullwidth sections.
 - Work/Portfolio (Markdown)
 - Features (Data)
 - About (Single Page)
+- Homepage (Single Page) 
 
 ### Features
 
-- Full-width/full-height hero images as a partial. Partial accepts a background-image, no background-image, background-image with blue overlay or just a blue color background.
-- Fixed height hero images as a partial
-- Full width strips on homepage
+- Full-width/full-height hero image partial. Partial accepts a background-image, no background-image, background-image with blue overlay or just a blue color background.
+- Full width strips on homepage and about us page
 - Single 'About' page with alternating full-width sections
 - Portfolio pages contain a CSS only masonary image gallery
+
+### Content Management
+
+- The "Home" page uses multiple markdown files for the different homepage sections. It uses __headless bundles__.
+- The "About Us" page uses multple markdown files for it's different sections. It uses __leaf bundles__ and shortcodes.
+- Services & Work are fully markdown driven with list, single and summary views.
 
 ### CSS
 
