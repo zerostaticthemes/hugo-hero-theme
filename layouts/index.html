@@ -17,30 +17,28 @@
 
 {{ define "main" }}
 
-{{ partial "hero-image-fullscreen.html" (dict "background" "images/jason-blackeye-1191801-unsplash.jpg" "heading" "Hero - Hugo Small Business Theme" "subheading" "Hero is a multipurpose Hugo theme with fullscreen hero images and fullwidth sections. It contains content types for a business or portfolio site."  "content" .)}}
+{{ partial "hero-image-fullscreen.html" (dict "background" .Params.heroBackground "heading" .Params.heroHeading "subheading" .Params.heroSubHeading  "content" .)}}
 
-{{ .Site.BaseURL }}
-
-<div id="home" class="strip bg-cover bg-position-top bg-overlay pt-17 pb-17" style="background-image: url('{{ .Site.BaseURL }}images/kevin-bhagat-461952-unsplash.jpg');">
-  <div class="container">
+{{ $headless := .Site.GetPage "/homepage" }}
+{{ $reusablePages := $headless.Resources.ByType "page" }}
+{{ $reusablePages := sort $reusablePages ".Params.weight" }}
+{{ range first 1 $reusablePages }}
+<div id="home" class="strip bg-cover bg-position-top bg-overlay" style="background-image: url(' {{ .Params.background | relURL }}');">
+  <div class="container pt-17 pb-17">
     <div class="row">
       <div class="col-12 col-md-6 offset-md-6">
-        {{ $headless := .Site.GetPage "/homepage" }}
-        {{ $reusablePages := $headless.Resources.ByType "page" }}
-        {{ $reusablePages := sort $reusablePages ".Params.weight" }}
-        {{ range first 1 $reusablePages }}
         <h2 class="text-primary text-capitalize">{{ .Title }}</h2>
         <p>{{ .Content }}</p>
-        <a class="button" href="{{ .Site.BaseURL }}work">{{ .Params.button }}</a>
-        {{ end }}
+        <a class="button" href="{{ .Params.buttonLink | relURL }}">{{ .Params.button }}</a>
       </div>
     </div>
   </div>
 </div>
+{{ end }}
 
 {{ $services := where (where .Site.RegularPages "Type" "services") ".Params.featured" true }}
 {{if gt (len $services) 0}}
-<div class="container pt-8 pb-8 pb-md-12 pt-md-12">
+<div class="container pt-8 pb-8 pb-md-14 pt-md-14">
   <div class="row justify-content-start">
     <div class="col-12">
       <h2 class="text-center mb-3">Our Services</h2>
@@ -57,19 +55,20 @@
 </div>
 {{end}}
 
-<div id="home" class="strip strip-primary">
+{{ range first 1 (after 1 $reusablePages) }}
+<div id="home" class="strip bg-primary bg-cover bg-position-top bg-overlay" style="background-image: url(' {{ .Params.background | relURL }}');">
   <div class="container pt-8 pb-8 pb-md-12 pt-md-12">
     <div class="row justify-content-center">
       <div class="col-12 col-md-8 text-center text-white">
-        {{ range first 1 (after 1 $reusablePages) }}
           <h2>{{ .Title }}</h2>
           <p>{{ .Content }}</p>
-          <a class="button button-white" href="{{ .Site.BaseURL }}about">{{ .Params.button }}</a>
-          {{ end }}
+          <a class="button button-white" href="{{ .Params.buttonLink | relURL }}">{{ .Params.button }}</a>
       </div>
     </div>
   </div>
 </div>
+{{ end }}
+
 {{ end }}
 
 {{ define "footer_js" }}
