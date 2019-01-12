@@ -1,4 +1,4 @@
-baseURL = "/test/"
+baseURL = "www.example.com"
 languageCode = "en-us"
 title = "Hugo Hero"
 themesDir = "../.."
@@ -36,3 +36,7 @@ themesDir = "../.."
     name = "Contact"
     url = "/contact/"
     weight = 4
+
+[permalinks]
+  post = "/:year/:month/:day/:slug/"
+  pages = "/:filename/"

@@ -6,5 +6,3 @@ layout: 'aboutlayout'
 ---
 
 # About Heading
-
-{{< bundle-inspect >}}

@@ -1,0 +1,21 @@
+
+{{ $bundle := .Get 0 }}
+{{ $match := .Get 1 }}
+{{ $page := .Page.Site.GetPage $bundle }}
+{{ with $page }}
+  {{ $resource := $page.Resources.GetMatch (printf "**%s*" $match ) }}
+  {{ with $resource }}
+    <div class="strip bg-primary bg-cover bg-position-top bg-overlay" style="background-image: url(' {{ .Params.background | relURL }}');">
+      <div class="container pt-8 pb-8 pb-md-12 pt-md-12">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 text-center text-white">
+            {{ .Content }}
+            {{ if .Params.button }}
+                <a class="button button-white" href="{{ .Params.buttonLink | relURL }}">{{ .Params.button }}</a>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  {{ end }}
+{{ end }}
