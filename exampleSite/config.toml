@@ -1,4 +1,4 @@
-baseURL = "www.example.com"
+baseURL = "/test/"
 languageCode = "en-us"
 title = "Hugo Hero"
 themesDir = "../.."

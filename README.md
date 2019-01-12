@@ -104,6 +104,8 @@ Now enter [`localhost:1313`](http://localhost:1313) in the address bar of your b
 
 If you have just cloned/downloaded the theme and have not placed it inside an existing Hugo site you can still run the theme against the `exampleSite` locally using the following command.
 
+from the theme directory (1 level above exampleSite) run:
+
 ```
 hugo server --source exampleSite --config exampleSite/config.toml --themesDir ../.. --theme hugo-hero-theme
 ```

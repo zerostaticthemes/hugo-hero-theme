@@ -5,10 +5,10 @@ draft: false
 weight: 3
 heroHeading: 'Cargo Terminal'
 heroSubHeading: 'Dockyard construction planning and review.'
-heroBackground: 'work/work3.jpg'
-thumbnail: "work/work3-thumbnail.jpg"
-images: ['https://source.unsplash.com/random/?nature', 
-'https://source.unsplash.com/random/?travel','https://source.unsplash.com/random/?architecture','https://source.unsplash.com/random/?buildings','https://source.unsplash.com/random/?city']
+heroBackground: 'https://source.unsplash.com/tjX_sniNzgQ/1600x400'
+thumbnail: 'https://source.unsplash.com/tjX_sniNzgQ/400x300'
+images: ['https://source.unsplash.com/random/400x600/?nature', 
+'https://source.unsplash.com/random/400x300/?travel','https://source.unsplash.com/random/400x300/?architecture','https://source.unsplash.com/random/400x600/?buildings','https://source.unsplash.com/random/400x300/?city','https://source.unsplash.com/random/400x600/?business']
 ---
 
 Agitabitur signa lympha; non lacunae, mox cum tumulis quoque triste dictis.
