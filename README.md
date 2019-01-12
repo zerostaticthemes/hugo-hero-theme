@@ -6,7 +6,6 @@ Hero is a multipurpose theme with fullscreen hero images and fullwidth sections.
 
 ![Hugo Hero Theme screenshot](https://github.com/JugglerX/hugo-hero-theme/blob/master/images/screenshot-full.jpg)
 
-
 ## Theme features
 
 ### Content Types
@@ -15,7 +14,7 @@ Hero is a multipurpose theme with fullscreen hero images and fullwidth sections.
 - Work/Portfolio (Markdown)
 - Features (Data)
 - About (Single Page)
-- Homepage (Single Page) 
+- Homepage (Single Page)
 
 ### Features
 
@@ -26,8 +25,8 @@ Hero is a multipurpose theme with fullscreen hero images and fullwidth sections.
 
 ### Content Management
 
-- The "Home" page uses multiple markdown files for the different homepage sections. It uses __headless bundles__.
-- The "About Us" page uses multple markdown files for it's different sections. It uses __leaf bundles__ and shortcodes.
+- The "Home" page uses multiple markdown files for the different homepage sections. It uses **headless bundles**.
+- The "About Us" page uses multiple markdown files for its different sections. It uses **leaf bundles** and **shortcodes**.
 - Services & Work are fully markdown driven with list, single and summary views.
 
 ### CSS
