@@ -5,7 +5,7 @@
 {{ define "main" }}
 {{ partial "hero-image-fullscreen.html" (dict "background" .Params.heroBackground "heading" .Params.heroHeading "subheading" .Params.heroSubHeading "content" .)}}
 
-<div class="container pt-8 pb-8 pt-md-10 pb-md-10">
+<div id="home" class="container pt-8 pb-8 pt-md-10 pb-md-10">
   <div class="row justify-content-center">
     {{ range .Site.Data.features }}
     <div class="col-12 col-md-6 col-lg-4 mb-2">
