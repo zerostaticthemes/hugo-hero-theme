@@ -51,7 +51,7 @@ Hero is a multipurpose theme with fullscreen hero images and fullwidth sections.
 
 # Installation
 
-If you already have Hugo installed, skip this step. Otherwise please follow the official [installation guide](https://gohugo.io/getting-started/installing/)
+To use this theme you will need to have Hugo installed. If you don't already have Hugo installed please follow the official [installation guide](https://gohugo.io/getting-started/installing/)
 
 ### Check Hugo Version
 
