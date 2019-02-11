@@ -51,17 +51,16 @@ Hero is a multipurpose theme with fullscreen hero images and fullwidth sections.
 
 # Installation
 
-### Installing Hugo
+## Install Hugo
+If you already have Hugo installed, skip this step. Otherwise please follow the official [installation guide](https://gohugo.io/getting-started/installing/)
 
-If you have not already installed Hugo on your machine please follow the official [installation guide](https://gohugo.io/getting-started/installing/) - Once Hugo is installed you may continue with the steps below.
+## Check Hugo Version
 
-This theme uses [Hugo Pipes](https://gohugo.io/hugo-pipes/scss-sass/) to compile SCSS and minify assets. Please make sure you have the `Hugo Extended` version installed. 
+This theme uses [Hugo Pipes](https://gohugo.io/hugo-pipes/scss-sass/) to compile SCSS and minify assets. Please make sure you have the `Hugo Extended` version installed. If you are not using the extended version this theme will not not compile.
 
 ```
 hugo version
 ```
-
-Check your version and make sure it says extended.
 
 ## Create a new Hugo site
 
@@ -89,9 +88,7 @@ You can download the .zip file located here https://github.com/JugglerX/hugo-her
 
 Extract the downloaded  .zip inside the `themes` folder. Rename the theme from `hugo-hero-theme-master` -> `hugo-hero-theme`. You should end up with the following folder structure `mynewsites/themes/hugo-hero-theme`
 
-# Configure theme
-
-## Add the example content
+## Add example content
 
 The fastest way to get started is to copy the example content. Copy the contents of the `exampleSite` folder to the root folder of your Hugo site (the folder with the README.md). 
 
@@ -107,7 +104,7 @@ themesDir = "themes"
 theme = "hugo-hero-theme"
 ```
 
-# Run Hugo
+## Run Hugo
 
 After installing the theme for the first time, generate the Hugo site.
 
