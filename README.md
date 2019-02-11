@@ -51,10 +51,9 @@ Hero is a multipurpose theme with fullscreen hero images and fullwidth sections.
 
 # Installation
 
-## Install Hugo
 If you already have Hugo installed, skip this step. Otherwise please follow the official [installation guide](https://gohugo.io/getting-started/installing/)
 
-## Check Hugo Version
+### Check Hugo Version
 
 This theme uses [Hugo Pipes](https://gohugo.io/hugo-pipes/scss-sass/) to compile SCSS and minify assets. Please make sure you have the `Hugo Extended` version installed. If you are not using the extended version this theme will not not compile.
 
@@ -62,7 +61,7 @@ This theme uses [Hugo Pipes](https://gohugo.io/hugo-pipes/scss-sass/) to compile
 hugo version
 ```
 
-## Create a new Hugo site
+### Create a new Hugo site
 
 ```
 hugo new site mynewsite
@@ -70,7 +69,7 @@ hugo new site mynewsite
 
 This will create a fresh Hugo site in the folder `mynewsite`. 
 
-## Install theme
+### Install theme
 
 Copy or git clone this theme into the sites themes folder `mynewsites/themes`
 
@@ -88,13 +87,13 @@ You can download the .zip file located here https://github.com/JugglerX/hugo-her
 
 Extract the downloaded  .zip inside the `themes` folder. Rename the theme from `hugo-hero-theme-master` -> `hugo-hero-theme`. You should end up with the following folder structure `mynewsites/themes/hugo-hero-theme`
 
-## Add example content
+### Add example content
 
 The fastest way to get started is to copy the example content. Copy the contents of the `exampleSite` folder to the root folder of your Hugo site (the folder with the README.md). 
 
 This theme comes with content for the following content types: `services` and `work`. The `about` us page is a single page with alternating fullwidth sections. It includes JSON data for `features` and `contact`. It also includes the `config.toml` file which has an example menu.
 
-## Update config.toml
+### Update config.toml
 
 After you copy the `config.toml` into the root folder of your Hugo site you will need to update the `baseURL`, `themesDir` and `theme` values in the `config.toml`
 
@@ -104,7 +103,7 @@ themesDir = "themes"
 theme = "hugo-hero-theme"
 ```
 
-## Run Hugo
+### Run Hugo
 
 After installing the theme for the first time, generate the Hugo site.
 
@@ -120,21 +119,8 @@ hugo server
 
 Now enter [`localhost:1313`](http://localhost:1313) in the address bar of your browser.
 
-### Running Hugo From within exampleSite
 
-If you have just cloned/downloaded the theme and have not placed it inside an existing Hugo site you can still run the theme against the `exampleSite` locally using the following command.
-
-from the theme directory (1 level above exampleSite) run:
-
-```
-hugo server --source exampleSite --config exampleSite/config.toml --themesDir ../.. --theme hugo-hero-theme
-```
-
-This is a less standard approach but may be convenient for some, particularly those who wish to maintain a single theme repo and also deploy a live demo to Netlify.
-
-See this discussion on how to deploy your site on Netlify from the `exampleSite` folder - https://discourse.gohugo.io/t/deploy-your-theme-to-netlify/15508
-
-## Configuring Theme Features
+# Configuring Theme Features
 
 ### Homepage meta tags
 
@@ -172,3 +158,12 @@ You can set meta tags on a per template basis using a block. For example, you mi
 {{ define main }}
 ...
 ```
+
+# Deploying to Netlify
+
+This theme includes a `netlify.toml` which is configured to deploy to Netlify from the `exampleSite` folder.  See this discussion on how to deploy your site on Netlify from the `exampleSite` folder - https://discourse.gohugo.io/t/deploy-your-theme-to-netlify/15508
+
+Most likely if you are deploying to Netlify, you are including the entire Hugo site, so you can delete the `netlify.toml` file.
+
+
+
