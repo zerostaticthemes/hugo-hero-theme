@@ -1,6 +1,6 @@
 baseURL = "www.example.com"
 languageCode = "en-us"
-title = "Hugo Hero"
+title = "Hugo Hero Theme"
 themesDir = "../.."
 theme = "hugo-hero-theme"
 
