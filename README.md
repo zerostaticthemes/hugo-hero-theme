@@ -71,7 +71,7 @@ This will create a fresh Hugo site in the folder `mynewsite`.
 
 ### Install theme
 
-Copy or git clone this theme into the sites themes folder `mynewsites/themes`
+Copy or git clone this theme into the sites themes folder `mynewsite/themes`
 
 #### Install with Git
 
@@ -85,13 +85,11 @@ git clone https://github.com/jugglerx/hugo-hero-theme.git
 
 You can download the .zip file located here https://github.com/JugglerX/hugo-hero-theme/archive/master.zip.
 
-Extract the downloaded  .zip inside the `themes` folder. Rename the theme from `hugo-hero-theme-master` -> `hugo-hero-theme`. You should end up with the following folder structure `mynewsites/themes/hugo-hero-theme`
+Extract the downloaded  .zip inside the `themes` folder. Rename the extracted folder from `hugo-hero-theme-master` -> `hugo-hero-theme`. You should end up with the following folder structure `mynewsite/themes/hugo-hero-theme`
 
 ### Add example content
 
-The fastest way to get started is to copy the example content. Copy the contents of the `exampleSite` folder to the root folder of your Hugo site (the folder with the README.md). 
-
-This theme comes with content for the following content types: `services` and `work`. The `about` us page is a single page with alternating fullwidth sections. It includes JSON data for `features` and `contact`. It also includes the `config.toml` file which has an example menu.
+The fastest way to get started is to copy the example content. Copy the entire contents of the `exampleSite` folder to the root folder of your Hugo site (the folder with the README.md). 
 
 ### Update config.toml
 
@@ -120,11 +118,11 @@ hugo server
 Now enter [`localhost:1313`](http://localhost:1313) in the address bar of your browser.
 
 
-# Configuring Theme Features
+# Configuring theme features
 
 ### Homepage meta tags
 
-Often the homepage requires special meta tags such as a description or og meta data for twitter, facebook etc. You can configure these values in the `config.toml`
+Often a homepage requires special meta tags such as a meta description or og meta data for twitter, facebook etc. You can configure these values in the `config.toml`
 
 ```
 // config.toml
@@ -145,7 +143,7 @@ Often the homepage requires special meta tags such as a description or og meta d
 
 ### Set meta tags on a per template/page basis
 
-You can set meta tags on a per template basis using a block. For example, you might want to write a custom `<meta description>` for the `/services` page. You can insert any valid HTML meta data inside the `{{ define "meta_tags }}` block at the top of a template.
+You can set meta tags on a per template basis using a block. For example, you might want to write a custom meta description for the `/services` page. You can insert any valid HTML meta data inside the `{{ define "meta_tags }}` block at the top of a template.
 
 ```
 // layouts/services/list.html
