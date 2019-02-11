@@ -17,20 +17,18 @@ Hero is a multipurpose theme with fullscreen hero images and fullwidth sections.
 - About (Single Page)
 - Homepage (Single Page)
 
-### Features
-
-- Full-width/full-height hero image partial. Partial accepts a background-image, no background-image, background-image with blue overlay or just a blue color background.
-- Full width strips on homepage and about us page
-- Single 'About' page with alternating full-width sections
-- Portfolio pages contain a CSS only masonary image gallery
-
 ### Content Management
-
+- This themes content is now all editable via markdown files.
 - The "Home" page uses multiple markdown files for the different homepage sections. It uses **headless bundles**.
 - The "About Us" page uses multiple markdown files for its different sections. It uses **leaf bundles** and **shortcodes**.
-- Services & Work are fully markdown driven with list, single and summary views.
+- "Services" & "Work" use markdown files with list, single and summary views.
 
-### CSS
+### Features
+
+- Full-width responsive design
+- Full-width/full-height hero image partial. Partial arguments include background-image, no background-image, background-image with overlay or just a solid color background.
+
+### SCSS
 
 - SCSS (Hugo Pipelines)
 - Responsive design
@@ -51,23 +49,33 @@ Hero is a multipurpose theme with fullscreen hero images and fullwidth sections.
 - Robust example content included
 - Royalty free images included
 
-## Installation
+# Installation
 
 ### Installing Hugo
 
 If you have not already installed Hugo on your machine please follow the official [installation guide](https://gohugo.io/getting-started/installing/) - Once Hugo is installed you may continue with the steps below.
 
-### Create a new Hugo Site
+This theme uses [Hugo Pipes](https://gohugo.io/hugo-pipes/scss-sass/) to compile SCSS and minify assets. Please make sure you have the `Hugo Extended` version installed. 
 
-Create a new Hugo site
+```
+hugo version
+```
+
+Check your version and make sure it says extended.
+
+## Create a new Hugo site
 
 ```
 hugo new site mynewsite
 ```
 
-This will create a new Hugo site in the folder `mynewsite`. Next you need to install this theme in the sites themes folder `mynewsites/themes`
+This will create a fresh Hugo site in the folder `mynewsite`. 
 
-You may do this by git cloning this repo into the `themes` folder.
+## Install theme
+
+Copy or git clone this theme into the sites themes folder `mynewsites/themes`
+
+#### Install with Git
 
 ```
 cd mynewsite
@@ -75,31 +83,39 @@ cd themes
 git clone https://github.com/jugglerx/hugo-hero-theme.git
 ```
 
-Alternatively you may download the .zip file located here https://github.com/JugglerX/hugo-hero-theme/archive/master.zip. Extract the .zip inside the `themes` folder. Rename the theme from `hugo-hero-theme-master` -> `hugo-hero-theme`. You should end up with the following folder structure `mynewsites/themes/hugo-hero-theme`
+#### Install from .zip file
 
-### Adding the example content
+You can download the .zip file located here https://github.com/JugglerX/hugo-hero-theme/archive/master.zip.
 
-The fastest way to get started is to copy the example content. Copy the contents of the `exampleSite` folder to the root folder of your Hugo site. This theme comes with content for the following content types: `services` and `work`. The `about` us page is a single page with alternating fullwidth sections. It includes JSON data for `features` and `contact`. It also includes the `config.toml` file which has an example menu.
+Extract the downloaded  .zip inside the `themes` folder. Rename the theme from `hugo-hero-theme-master` -> `hugo-hero-theme`. You should end up with the following folder structure `mynewsites/themes/hugo-hero-theme`
 
-### Updating config.toml
+# Configure theme
+
+## Add the example content
+
+The fastest way to get started is to copy the example content. Copy the contents of the `exampleSite` folder to the root folder of your Hugo site (the folder with the README.md). 
+
+This theme comes with content for the following content types: `services` and `work`. The `about` us page is a single page with alternating fullwidth sections. It includes JSON data for `features` and `contact`. It also includes the `config.toml` file which has an example menu.
+
+## Update config.toml
 
 After you copy the `config.toml` into the root folder of your Hugo site you will need to update the `baseURL`, `themesDir` and `theme` values in the `config.toml`
 
 ```
 baseURL = "/"
-themesDir = "themes" // you can also remove this line
-theme = "hugo-hero-theme" // or whatever you rename the theme folder too
+themesDir = "themes"
+theme = "hugo-hero-theme"
 ```
 
-### Running Hugo
+# Run Hugo
 
-After installing the theme, generate the Hugo site.
+After installing the theme for the first time, generate the Hugo site.
 
 ```
 hugo
 ```
 
-Hugo's built-in local server.
+For local development run Hugo's built-in local server.
 
 ```
 hugo server
