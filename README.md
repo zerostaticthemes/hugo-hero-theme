@@ -77,8 +77,7 @@ Copy or git clone this theme into the sites themes folder `mynewsite/themes`
 
 ```
 cd mynewsite
-cd themes
-git clone https://github.com/jugglerx/hugo-hero-theme.git
+git clone https://github.com/jugglerx/hugo-hero-theme.git themes/hugo-hero-theme
 ```
 
 #### Install from .zip file
@@ -89,11 +88,17 @@ Extract the downloaded  .zip inside the `themes` folder. Rename the extracted fo
 
 ### Add example content
 
-The fastest way to get started is to copy the example content. Copy the entire contents of the `exampleSite` folder to the root folder of your Hugo site (the folder with the README.md). 
+Copy the entire contents of the `mynewsite/themes/hugo-hero-theme/exampleSite/` folder to root folder of your Hugo site, ie `mynewsite/`
+
+To copy the files using terminal, make sure you are still in the projects root, ie the `mynewsite` folder.
+
+```
+cp -a themes/hugo-hero-theme/exampleSite/. .
+```
 
 ### Update config.toml
 
-After you copy the `config.toml` into the root folder of your Hugo site you will need to update the `baseURL`, `themesDir` and `theme` values in the `config.toml`
+After you copy the `config.toml` into the root folder of your Hugo site you will need to update the `baseURL`, `themesDir` and `theme` values in  `mynewsite/config.toml`
 
 ```
 baseURL = "/"
@@ -104,6 +109,8 @@ theme = "hugo-hero-theme"
 ### Run Hugo
 
 After installing the theme for the first time, generate the Hugo site.
+
+You run this command from the root folder of your Hugo site ie `mynewsite/`
 
 ```
 hugo
