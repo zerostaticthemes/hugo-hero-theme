@@ -5,11 +5,11 @@
 
 {{ define "meta_tags" }}
 <meta name="description" content="{{ .Site.Params.homepage_meta_tags.meta_description }}" />
-<meta property="og:title" content="{{ .Site.Params.homepage_meta_tags.meta_og_title }}" /> 
-<meta property="og:type" content="{{ .Site.Params.homepage_meta_tags.meta_og_type }}" /> 
+<meta property="og:title" content="{{ .Site.Params.homepage_meta_tags.meta_og_title }}" />
+<meta property="og:type" content="{{ .Site.Params.homepage_meta_tags.meta_og_type }}" />
 <meta property="og:url" content="{{ .Site.Params.homepage_meta_tags.meta_og_url }}" />
 <meta property="og:image" content="{{ .Site.Params.homepage_meta_tags.meta_og_image }}" />
-<meta property="og:description" content="{{ .Site.Params.homepage_meta_tags.meta_og_description }}"/>
+<meta property="og:description" content="{{ .Site.Params.homepage_meta_tags.meta_og_description }}" />
 <meta name="twitter:card" content="{{ .Site.Params.homepage_meta_tags.meta_twitter_card }}" />
 <meta name="twitter:site" content="{{ .Site.Params.homepage_meta_tags.meta_twitter_site }}" />
 <meta name="twitter:creator" content="{{ .Site.Params.homepage_meta_tags.meta_twitter_creator }}" />
@@ -17,13 +17,13 @@
 
 {{ define "main" }}
 
-{{ partial "hero-image-fullscreen.html" (dict "background" .Params.heroBackground "heading" .Params.heroHeading "subheading" .Params.heroSubHeading  "content" .)}}
+{{ partial "hero-image-fullscreen.html" (dict "background" .Params.heroBackground "heading" .Params.heroHeading "subheading" .Params.heroSubHeading "content" .)}}
 
 {{ $headless := .Site.GetPage "/homepage" }}
 {{ $reusablePages := $headless.Resources.ByType "page" }}
 {{ $reusablePages := sort $reusablePages ".Params.weight" }}
 {{ range first 1 $reusablePages }}
-<div id="home" class="strip bg-cover bg-position-top bg-overlay" style="background-image: url(' {{ .Params.background | relURL }}');">
+<div id="home" class="strip bg-cover bg-position-top bg-overlay" style="background-image: url('{{ .Params.background | relURL }}');">
   <div class="container pt-17 pb-17">
     <div class="row">
       <div class="col-12 col-md-6 offset-md-6">
@@ -56,13 +56,13 @@
 {{end}}
 
 {{ range first 1 (after 1 $reusablePages) }}
-<div id="home" class="strip bg-primary bg-cover bg-position-top bg-overlay" style="background-image: url(' {{ .Params.background | relURL }}');">
+<div id="home" class="strip bg-primary bg-cover bg-position-top bg-overlay" style='background-image: url("{{ .Params.background | relURL }}");'>
   <div class="container pt-8 pb-8 pb-md-12 pt-md-12">
     <div class="row justify-content-center">
       <div class="col-12 col-md-8 text-center text-white">
-          <h2>{{ .Title }}</h2>
-          <p>{{ .Content }}</p>
-          <a class="button button-white" href="{{ .Params.buttonLink | relURL }}">{{ .Params.button }}</a>
+        <h2>{{ .Title }}</h2>
+        <p>{{ .Content }}</p>
+        <a class="button button-white" href="{{ .Params.buttonLink | relURL }}">{{ .Params.button }}</a>
       </div>
     </div>
   </div>
