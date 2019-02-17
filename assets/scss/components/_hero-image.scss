@@ -1,11 +1,12 @@
 .hero-image {
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top center;
+  // background-position: top center;
   background-blend-mode: overlay;
   background-color: $primary;
   height: 400px;
   position: relative;
+  padding-top: 60px;
   .container {
     height: 100%;
     display: flex;
@@ -17,7 +18,6 @@
   }
   .hero-text {
     flex: 0;
-    width: 90%;
     color: #ffffff;
     margin: auto 0;
     h1 {
@@ -59,7 +59,7 @@
   height: 100vh;
 }
 .hero-image-setheight {
-  height: 400px;
+  height: 460px;
 }
 .hero-image-blend-overlay {
   background-blend-mode: overlay;
