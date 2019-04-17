@@ -53,19 +53,17 @@ Hero is a multi-page, multi-purpose theme with fullscreen hero images and fullwi
 - Robust example content included
 - Royalty free images included
 
-# Installation
-
-### Install Hugo
+# Install Hugo
 
 To use this theme you will need to have Hugo installed. If you don't already have Hugo installed please follow the official [installation guide](https://gohugo.io/getting-started/installing/)
 
-### Check Hugo Version (Hugo 0.51+ Extended is Required)
+### Check Hugo version (Hugo 0.51+ Extended is required)
 
 This theme uses [Hugo Pipes](https://gohugo.io/hugo-pipes/scss-sass/) to compile SCSS and minify assets. Please make sure you have the **Hugo Extended** version installed. If you are not using the extended version this theme will not not compile.
 
 To check your version of Hugo, run:
 
-```bash
+```
 hugo version
 ```
 
@@ -79,9 +77,9 @@ hugo new site mynewsite
 
 This will create a fresh Hugo site in the folder `mynewsite`.
 
-## Install theme
+# Install Theme
 
-Copy or git clone this theme into the sites themes folder `mynewsite/themes`
+You may download and extract this theme or git clone this theme into the sites themes folder `mynewsite/themes`
 
 #### Install with Git
 
@@ -96,7 +94,7 @@ You can download the .zip file located here https://github.com/JugglerX/hugo-her
 
 Extract the downloaded .zip inside the `themes` folder. Rename the extracted folder from `hugo-hero-theme-master` -> `hugo-hero-theme`. You should end up with the following folder structure `mynewsite/themes/hugo-hero-theme`
 
-### Add example content
+### Update example content
 
 Copy the entire contents of the `mynewsite/themes/hugo-hero-theme/exampleSite/` folder to root folder of your Hugo site, ie `mynewsite/`
 
@@ -134,7 +132,7 @@ hugo server
 
 Now enter [`localhost:1313`](http://localhost:1313) in the address bar of your browser.
 
-# Configuring theme features
+# Configuring Theme
 
 ### Homepage meta tags
 
@@ -142,8 +140,7 @@ Often a homepage requires special meta tags such as a meta description or og met
 
 ```
 // config.toml
-[params]
-  google_analytics_id=""
+...
 
   [params.homepage_meta_tags]
     meta_description = "a description of your website."
@@ -155,9 +152,10 @@ Often a homepage requires special meta tags such as a meta description or og met
     meta_twitter_card = "summary"
     meta_twitter_site = "@mytwitterhandle"
     meta_twitter_creator = "@mytwitterhandle"
+
 ```
 
-### Set meta tags on a per template/page basis
+### Set meta tags on a per layout basis
 
 You can set meta tags on a per template basis using a block. For example, you might want to write a custom meta description for the `/services` page. You can insert any valid HTML meta data inside the `{{ define "meta_tags }}` block at the top of a template.
 
@@ -173,8 +171,22 @@ You can set meta tags on a per template basis using a block. For example, you mi
 ...
 ```
 
+### Google Analytics
+
+Add you google analytics ID to the `config.toml`
+
+```
+// config.toml
+[params]
+  google_analytics_id="UA-132398315-1"
+```
+
+### Menu
+
+You can edit and add main menu links in the `config.toml` under `[[menu.main]]`
+
 # Deploying to Netlify
 
 This theme includes a `netlify.toml` which is configured to deploy to Netlify from the `exampleSite` folder. See this discussion on how to deploy your site on Netlify from the `exampleSite` folder - https://discourse.gohugo.io/t/deploy-your-theme-to-netlify/15508
 
-Most likely if you are deploying to Netlify, you are including the entire Hugo site, so you can delete the `netlify.toml` file.
+Most likely if you are deploying to Netlify and created a new Hugo site or added this theme to an existing Hugo site then you are not deploying from the `exampleSite` directory and you can delete the `netlify.toml` file.
