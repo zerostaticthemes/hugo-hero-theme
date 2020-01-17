@@ -1,6 +1,6 @@
 # Hugo Hero Theme
 
-Hero is a multi-page, multi-purpose theme with fullscreen hero images and fullwidth sections.
+Hero is a multi-page business theme with fullscreen hero images and fullwidth sections.
 
 [Live Demo](https://hugo-hero.netlify.com/) |
 [Installation](#installation) | 
@@ -8,7 +8,7 @@ Hero is a multi-page, multi-purpose theme with fullscreen hero images and fullwi
 
 ![Hugo Hero Theme screenshot](https://github.com/JugglerX/hugo-hero-theme/blob/master/images/screenshot-full.jpg)
 
-## Theme features
+# Features
 
 ### Content Types
 
@@ -55,7 +55,7 @@ Hero is a multi-page, multi-purpose theme with fullscreen hero images and fullwi
 - Royalty free images included
 
 # Installation
-## Install Hugo
+### Install Hugo
 
 To use this theme you will need to have Hugo installed. If you don't already have Hugo installed please follow the official [installation guide](https://gohugo.io/getting-started/installing/)
 
@@ -79,24 +79,21 @@ hugo new site mynewsite
 
 This will create a fresh Hugo site in the folder `mynewsite`.
 
-## Install Theme
+### Install theme with Git
 
-You may download and extract this theme or git clone this theme into the sites themes folder `mynewsite/themes`
-
-#### Install with Git
-
+Clone this repo into the themes folder
 ```
 cd mynewsite
 git clone https://github.com/jugglerx/hugo-hero-theme.git themes/hugo-hero-theme
 ```
 
-#### Install from .zip file
+### Install theme from .zip file
 
 You can download the .zip file located here https://github.com/JugglerX/hugo-hero-theme/archive/master.zip.
 
 Extract the downloaded .zip inside the `themes` folder. Rename the extracted folder from `hugo-hero-theme-master` -> `hugo-hero-theme`. You should end up with the following folder structure `mynewsite/themes/hugo-hero-theme`
 
-### Update example content
+### Copy example content
 
 Copy the entire contents of the `mynewsite/themes/hugo-hero-theme/exampleSite/` folder to root folder of your Hugo site, ie `mynewsite/`
 
@@ -134,7 +131,7 @@ hugo server
 
 Now enter [`localhost:1313`](http://localhost:1313) in the address bar of your browser.
 
-# Configuring Theme
+# Configuration
 
 ### Homepage meta tags
 
