@@ -54,7 +54,8 @@ Hero is a multi-page, multi-purpose theme with fullscreen hero images and fullwi
 - Robust example content included
 - Royalty free images included
 
-# Install Hugo
+# Installation
+## Install Hugo
 
 To use this theme you will need to have Hugo installed. If you don't already have Hugo installed please follow the official [installation guide](https://gohugo.io/getting-started/installing/)
 
@@ -78,7 +79,7 @@ hugo new site mynewsite
 
 This will create a fresh Hugo site in the folder `mynewsite`.
 
-# Install Theme
+## Install Theme
 
 You may download and extract this theme or git clone this theme into the sites themes folder `mynewsite/themes`
 
