@@ -33,6 +33,12 @@ theme = "hugo-hero-theme"
     url = "/about/"
     weight = 3
 
+
+[[menu.main]]
+    name = "History"
+    url = "/history/"
+    weight = 3
+
 [[menu.main]]
     name = "Contact"
     url = "/contact/"
