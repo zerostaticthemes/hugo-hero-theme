@@ -1,0 +1,23 @@
+.gradation-title {
+    font-size: 72px;
+    // background: linear-gradient(to bottom,#F38EBB, #ff3565);
+    background: linear-gradient(to right,#ff3565, #F38EBB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+  
+.grey-title {
+    color: #747574;
+}
+
+hr.spacer {
+    height: 5px;
+    background: linear-gradient(to left, #ff3565, #F38EBB);
+    border: none;
+    border-radius: 5px;
+}
+
+.mission-description {
+    padding: 30px;
+}
+
