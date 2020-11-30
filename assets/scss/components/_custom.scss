@@ -21,3 +21,38 @@ hr.spacer {
     padding: 30px;
 }
 
+.company-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+.company-container img {
+    width: 100%;
+}
+.text-center {
+    text-align: center;
+}
+.flexbox {
+    display: flex;
+}
+.profile {
+    width: 50%;
+    margin: auto;
+}
+.map {
+    width: 50%;
+    margin: auto .5rem;
+}
+@media screen and (max-width: 767px) {
+    .flexbox {
+        display: block;
+    }
+    .flexbox .box1 {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .flexbox .box2 {
+        width: 100%;
+        margin: 0 auto;
+    }
+}

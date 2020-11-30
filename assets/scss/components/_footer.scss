@@ -47,8 +47,7 @@
       }
       &.copyright {
         font-weight: bold;
-        color: lighten($secondary, 50%);
-        display: none;
+        color: white;
         @include media-breakpoint-up(md) {
           display: inline-block;
         }
