@@ -69,6 +69,49 @@
 </div>
 {{ end }}
 
+{{ range first 1 (after 2 $reusablePages) }}
+<div id="home" class="strip bg-secondary bg-cover bg-position-top bg-overlay" style='background-image: url("{{ .Params.background | relURL }}");'>
+  <div class="container pt-8 pb-8 pb-md-12 pt-md-12">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 text-center text-white">
+        <h2>{{ .Title }}</h2>
+        <!-- <p>{{ .Content }}</p> -->
+        <table class="table table-bordered table-dark">
+          <tr>
+            <th scope="row">会社名</th>
+            <td>株式会社 filmingo</td>
+          </tr>
+          <tr>
+            <th scope="row">英文社名</td>
+            <td>filmingo Inc.</td>
+          </tr>
+          <tr>
+            <th scope="row">所在地</td>
+            <td>東京都品川区西品川一丁目1-1 住友不動産大崎ガーデンタワー9階トンネル東京</td>
+          </tr>
+          <tr>
+            <th scope="row">設立</td>
+            <td>2020年4月</td>
+          </tr>
+          <tr>
+            <th scope="row">代表者</td>
+            <td>代表取締役社長 入口大輝</td>
+          </tr>
+          <tr>
+            <th scope="row">事業内容</td>
+            <td>
+              <p>情報通信業</p>
+              <p>映画配給会社、映画興行会社向けの業務システム開発</p>
+              <p>エンターテイメント業界に関わるデジタルプロダクト開発コンサルタント</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
+
 {{ end }}
 
 {{ define "footer_js" }}
