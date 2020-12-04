@@ -1,3 +1,4 @@
+// Mission section
 .gradation-title {
     font-size: 72px;
     // background: linear-gradient(to bottom,#F38EBB, #ff3565);
@@ -21,42 +22,7 @@ hr.spacer {
     padding: 30px;
 }
 
-.company-container {
-    // width: 100%;
-    // max-width: 1200px;
-    // margin: auto;
-}
-.company-container img {
-    // width: 100%;
-}
-.text-center {
-    text-align: center;
-}
-.flexbox {
-    display: flex;
-}
-.profile {
-    width: 50%;
-    margin: auto;
-}
-.map {
-    width: 50%;
-    background-color: white;
-    margin: auto;
-}
-@media screen and (max-width: 767px) {
-    .flexbox {
-        display: block;
-    }
-    .flexbox .box1 {
-        width: 100%;
-        margin: 0 auto;
-    }
-    .flexbox .box2 {
-        width: 100%;
-        margin: 0 auto;
-    }
-}
+// Campany section
 table.rs-table-bordered {
     border:1px solid #615B5B;
     margin-top:20px;
