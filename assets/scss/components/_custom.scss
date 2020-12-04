@@ -22,12 +22,12 @@ hr.spacer {
 }
 
 .company-container {
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
+    // width: 100%;
+    // max-width: 1200px;
+    // margin: auto;
 }
 .company-container img {
-    width: 100%;
+    // width: 100%;
 }
 .text-center {
     text-align: center;
@@ -41,7 +41,8 @@ hr.spacer {
 }
 .map {
     width: 50%;
-    margin: auto .5rem;
+    background-color: white;
+    margin: auto;
 }
 @media screen and (max-width: 767px) {
     .flexbox {
@@ -55,4 +56,17 @@ hr.spacer {
         width: 100%;
         margin: 0 auto;
     }
+}
+table.rs-table-bordered {
+    border:1px solid #615B5B;
+    margin-top:20px;
+}
+table.rs-table-bordered th {
+    color: white;
+    border:1px solid #615B5B;
+    margin-top:20px;
+}
+table.rs-table-bordered > tbody > tr > td{
+    color: white;
+    border:1px solid #615B5B;
 }
