@@ -67,9 +67,32 @@
   <div class="container pt-8 pb-8 pb-md-12 pt-md-12">
     <div class="row justify-content-center">
       <div class="col-12 col-md-8 text-center text-white">
-        <h2>{{ .Title }}</h2>
+        <form name="contact" method="POST" data-netlify="true">
+          <p>
+            <label>会社名: <input type="text" name="name" /></label>   
+          </p>
+          <p>
+            <label>Your Name: <input type="text" name="name" /></label>   
+          </p>
+          <p>
+            <label>Your Email: <input type="email" name="email" /></label>
+          </p>
+          <p>
+            <label>Your Role: <select name="role[]" multiple>
+              <option value="leader">Leader</option>
+              <option value="follower">Follower</option>
+            </select></label>
+          </p>
+          <p>
+            <label>Message: <textarea name="message"></textarea></label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
+        <!-- <h2>{{ .Title }}</h2>
         <p>{{ .Content }}</p>
-        <a class="button button-white" href="{{ .Params.buttonLink | relURL }}">{{ .Params.button }}</a>
+        <a class="button button-white" href="{{ .Params.buttonLink | relURL }}">{{ .Params.button }}</a> -->
       </div>
     </div>
   </div>
