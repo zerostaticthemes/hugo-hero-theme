@@ -12,21 +12,21 @@
             <div class="form-group">
                 <label for="companyInput">会社名</label>
                 <span class="badge badge-pill badge-danger bg-light-red">必須</span>
-                <input type="text" class="form-control" id="companyInput" placeholder="company" required>
+                <input name="company" type="text" class="form-control" id="companyInput" placeholder="company" required>
             </div>
             <div class="form-group">
                 <label for="departmentInput">部署名</label>
-                <input type="text" class="form-control" id="departmentInput" placeholder="department">
+                <input name="department" type="text" class="form-control" id="departmentInput" placeholder="department">
             </div>
             <div class="form-group">
                 <label for="personInput">ご担当者名</label>
                 <span class="badge badge-pill badge-danger bg-light-red">必須</span>
-                <input type="text" class="form-control" id="personInput" placeholder="the contact person" required>
+                <input name="the contact person" type="text" class="form-control" id="personInput" placeholder="the contact person" required>
             </div>
             <div class="form-group">
                 <label for="emailInput">Email</label>
                 <span class="badge badge-pill badge-danger bg-light-red">必須</span>
-                <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="email" required>
+                <input name="email" type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="email" required>
                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
             <div class="form-group">
@@ -36,7 +36,7 @@
             <div class="form-group">
                 <label for="messageInput">お問合せ内容</label>
                 <span class="badge badge-pill badge-danger bg-light-red">必須</span>
-                <textarea class="form-control" id="messageInput" placeholder="message" rows="5" required></textarea>
+                <textarea name="message" class="form-control" id="messageInput" placeholder="message" rows="5" required></textarea>
             </div>
             <div class="text-center my-5">
                 <button type="submit" class="btn btn-primary btn-outline-danger px-10">送信</button>
