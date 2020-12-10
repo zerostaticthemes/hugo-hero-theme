@@ -8,7 +8,7 @@
         <h2 style="margin-bottom: 0px;">お問合せフォーム</h2>
         <h6 style="color: #615B5B;">contact</h6>
         <hr style="height:1px;border-width:0;color:#615B5B;;background-color:#615B5B;">
-        <form class="text-white" name="contact" method="POST" data-netlify="true">
+        <form class="text-white" name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
             <div class="form-group">
                 <label for="companyInput">会社名</label>
                 <span class="badge badge-pill badge-danger bg-light-red">必須</span>
@@ -38,6 +38,7 @@
                 <span class="badge badge-pill badge-danger bg-light-red">必須</span>
                 <textarea name="message" class="form-control" id="messageInput" placeholder="message" rows="5" required></textarea>
             </div>
+            <div data-netlify-recaptcha="true"></div>
             <div class="text-center my-5">
                 <button type="submit" class="btn btn-primary btn-outline-danger px-10">送信</button>
             </div>
