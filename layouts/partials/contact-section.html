@@ -8,7 +8,7 @@
         <h2 style="margin-bottom: 0px;">お問合せフォーム</h2>
         <h6 style="color: #615B5B;">contact</h6>
         <hr style="height:1px;border-width:0;color:#615B5B;;background-color:#615B5B;">
-        <form class="text-white" name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+        <form class="text-white" name="contact" method="POST" data-netlify="true">
             <div class="form-group">
                 <label for="companyInput">会社名</label>
                 <span class="badge badge-pill badge-danger bg-light-red">必須</span>
@@ -19,7 +19,7 @@
                 <input name="department" type="text" class="form-control" id="departmentInput" placeholder="department">
             </div>
             <div class="form-group">
-                <label for="personInput">ご担当者名</label>
+                <label for="personInput">氏名</label>
                 <span class="badge badge-pill badge-danger bg-light-red">必須</span>
                 <input name="name" type="text" class="form-control" id="personInput" placeholder="name" required>
             </div>
@@ -38,7 +38,6 @@
                 <span class="badge badge-pill badge-danger bg-light-red">必須</span>
                 <textarea name="message" class="form-control" id="messageInput" placeholder="message" rows="5" required></textarea>
             </div>
-            <div data-netlify-recaptcha="true"></div>
             <div class="text-center my-5">
                 <button type="submit" class="btn btn-primary btn-outline-danger px-10">送信</button>
             </div>
