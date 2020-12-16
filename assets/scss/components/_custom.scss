@@ -1,15 +1,18 @@
-// page home
+// Page Home
 .page-home {
     background-color: black;
 }
 
-// Mission section
-.gradation-title {
-    font-size: 72px;
+// Mission Section
+.gradation-color {
     // background: linear-gradient(to bottom,#F38EBB, #ff3565);
     background: linear-gradient(to right,#ff3565, #F38EBB);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.mission-title {
+    font-size: 72px;
 }
   
 .grey-title {
@@ -27,7 +30,25 @@ hr.spacer {
     padding: 30px;
 }
 
-// Campany section
+// Value Section
+.value-container {
+    @include media-breakpoint-up(sm) {
+        padding: 40px 80px;
+    }
+    padding: 40px 20px;
+}
+
+.value-key {
+    font-size: 1.5rem;
+}
+
+.value-content {
+
+}
+
+
+
+// Campany Section
 table.rs-table-bordered {
     border:1px solid #615B5B;
     margin-top:20px;
@@ -45,7 +66,7 @@ table.rs-table-bordered .key {
     width: 30%;
 }
 
-// Contact section
+// Contact Section
 .bg-light-red {
     background-color: #ff3565;
 }
