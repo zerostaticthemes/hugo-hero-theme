@@ -1,20 +1,19 @@
 <!-- css: _news-summary.scss -->
-<a href="{{ .Permalink }}">
-  <div class="news-summary text-white d-flex">
-    <div class="w-100 pl-2 pt-2">
-      <div class="news-title">
-        {{ .Title }}
-      </div>
-      <div class="news-date">
-        {{ dateFormat "2006.01.02" .Date }}
-      </div>
-      <div class="news-content pt-1">
-        {{ .Content | truncate 100 "..." }}
-      </div>
+<div class="news-summary d-flex">
+  <div class="w-100 pl-2 pt-2 text-white">
+    <div class="news-title">
+      {{ .Title }}
     </div>
-    {{ if .Params.icon }}
-      <img class="news-image flex-shrink-1 px-1" src="{{ .Site.BaseURL }}{{ .Params.icon }}"/>
-    {{ end }}
-    <img class="flex-shrink-1" src="{{ .Site.BaseURL }}images/arrow-right.svg" />
+    <div class="news-date">
+    {{ dateFormat "2006.01.02" .Date }}
+    </div>
+    <div class="news-content pt-1">
+      {{ .Content | truncate 100 "..." }}
+    </div>
   </div>
-</a>
+  {{ if .Params.icon }}
+    <img class="news-image flex-shrink-1 px-1" src="{{ .Site.BaseURL }}{{ .Params.icon }}"/>
+  {{ end }}
+  <img class="flex-shrink-1" src="{{ .Site.BaseURL }}images/arrow-right.svg" />
+  <a class="stretched-link" href="{{ .Permalink }}"></a>
+</div>

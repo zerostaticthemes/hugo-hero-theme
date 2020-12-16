@@ -1,4 +1,6 @@
-
+.news-summary:hover {
+    background-color: #343A40;
+}
 .news-summary {
     background-color: #7d7d7d33;
     min-height: 150px;
@@ -10,6 +12,9 @@
             font-size: 0.8rem;
         }
         .news-content {
+            a {
+                color: white;
+            }
         }
     }
     .news-image {
