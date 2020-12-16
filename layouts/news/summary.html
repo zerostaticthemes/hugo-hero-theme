@@ -12,8 +12,8 @@
         {{ .Content | truncate 100 "..." }}
       </div>
     </div>
-    {{ if .Params.heroBackground }}
-      <img class="news-image flex-shrink-1 px-1" src="{{ .Site.BaseURL }}{{ .Params.heroBackground }}"/>
+    {{ if .Params.icon }}
+      <img class="news-image flex-shrink-1 px-1" src="{{ .Site.BaseURL }}{{ .Params.icon }}"/>
     {{ end }}
     <img class="flex-shrink-1" src="{{ .Site.BaseURL }}images/arrow-right.svg" />
   </div>
