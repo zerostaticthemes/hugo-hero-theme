@@ -44,7 +44,7 @@
 
     <div class="col-md" style="background-color: black;">
       <div class="text-center text-white pt-3 pb-1">
-        <h2>News</h2>
+        <div class="h2 mb-0">News</div>
         <p>お知らせ</p>
       </div>
       {{ $news := where (where .Site.RegularPages "Type" "news") ".Params.featured" true }}
