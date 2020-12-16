@@ -36,6 +36,41 @@
 </div>
 {{ end }} -->
 
+<div id="value-news-section">
+  <div class="row no-gutters">
+    <div class="col-md" style="background-color: black;">
+      
+    </div>
+
+    <div class="col-md" style="background-color: black;">
+      <div class="text-center text-white pt-3 pb-1">
+        <h2>News</h2>
+        <p>お知らせ</p>
+      </div>
+      {{ $news := where (where .Site.RegularPages "Type" "news") ".Params.featured" true }}
+      {{if gt (len $news) 0}}
+        {{ range $index, $element := first 3 (sort $news ".Params.weight") }}
+        {{if gt $index 0}}
+          <!-- border line -->
+          <hr class="my-0" style="height: 1px;">
+        {{end}}
+          <!-- layouts/news/summary.html -->
+          {{ .Render "summary" }}
+        {{ end }}
+      {{end}}
+      {{if eq (len $news) 1}}
+        <hr style="height: 300px;"/>
+      {{end}}
+      {{if eq (len $news) 2}}
+      <hr style="height: 150px;"/>
+      {{end}}
+      <div class="text-center my-3">
+        <a hidden href="{{ .Site.BaseURL }}news" class="btn btn-success btn-lg active" role="button" aria-pressed="true">お知らせを全て見る</a>
+      </div>
+    </div>
+  </div>
+</div>
+
 {{ $services := where (where .Site.RegularPages "Type" "services") ".Params.featured" true }}
 {{if gt (len $services) 0}}
 <div class="container pt-8 pb-8 pb-md-14 pt-md-14">
@@ -45,6 +80,7 @@
     </div>
     {{ range first 6 (sort $services ".Params.weight") }}
     <div class="col-12 col-md-4 mb-1">
+      <!-- layouts/services/summary.html -->
       {{ .Render "summary" }}
     </div>
     {{ end }}

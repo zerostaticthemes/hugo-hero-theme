@@ -1,0 +1,20 @@
+
+.news-summary {
+    background-color: #7d7d7d33;
+    min-height: 150px;
+    div {
+        .news-title {
+            font-size: 1.4rem;
+        }
+        .news-date {
+            font-size: 0.8rem;
+        }
+        .news-content {
+        }
+    }
+    .news-image {
+        width: 20%;
+        height: 100%;
+        align-self: center;
+    }
+}
