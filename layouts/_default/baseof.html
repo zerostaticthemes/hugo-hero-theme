@@ -10,19 +10,11 @@
   <link rel="icon" href="{{ .Site.BaseURL }}favicon.png">
 
   {{ if .Site.IsServer }}
-    {{ $style := resources.Get "scss/style.scss" | toCSS (dict "targetPath" "css/style.css" "enableSourceMap" true) }}
-    <link rel="stylesheet" href="{{ ($style).RelPermalink }}">
-    {{ range .Site.Params.custom_css }}
-      {{ $customCss := resources.Get . }}
-      <link rel="stylesheet" href="{{ $customCss.RelPermalink }}">
-    {{ end }}
+  {{ $style := resources.Get "scss/style.scss" | toCSS (dict "targetPath" "css/style.css" "enableSourceMap" true) }}
+  <link rel="stylesheet" href="{{ ($style).RelPermalink }}">
   {{ else }}
-    {{ $style := resources.Get "scss/style.scss" | toCSS (dict "targetPath" "css/style.css" "enableSourceMap" false) }}
-    <link rel="stylesheet" href="{{ ($style | minify | fingerprint).RelPermalink }}">
-    {{ range .Site.Params.custom_css }}
-      {{ $customCss := resources.Get . | minify | fingerprint }}
-      <link rel="stylesheet" href="{{ $customCss.RelPermalink }}">
-    {{ end }}
+  {{ $style := resources.Get "scss/style.scss" | toCSS (dict "targetPath" "css/style.css" "enableSourceMap" false) }}
+  <link rel="stylesheet" href="{{ ($style | minify | fingerprint).RelPermalink }}">
   {{ end }}
 
   {{ block "header_css" . }}{{ end }}
