@@ -21,53 +21,19 @@
         <li><strong>Email: </strong><a href="mailto:{{ .Site.Data.contact.email }}">
             {{ .Site.Data.contact.email }}</a></li>
         {{ if .Site.Data.contact.address }}
-        <li><strong>Address: </strong>{{ .Site.Data.contact.address }}</li>
+        <li style="white-space: pre-wrap;"><strong>Address: </strong><br>{{ .Site.Data.contact.address }}</li>
         {{ end }}
       </ul>
       <h4 class="mt-4">Business Hours</h4>
       <table class="table table-sm opening-hours-table">
+        {{ range .Site.Data.contact.hours }}
         <tr>
-          <td class="day font-weight-bold">Monday</td>
-          <td class="opens">8:30am</td>
+          <td class="day font-weight-bold">{{ .day }}</td>
+          <td class="opens">{{ .open }}</td>
           <td>-</td>
-          <td class="closes">5:00pm</td>
+          <td class="closes">{{ .close }}</td>
         </tr>
-        <tr>
-          <td class="day font-weight-bold">Tuesday</td>
-          <td class="opens">8:30am</td>
-          <td>-</td>
-          <td class="closes">5:00pm</td>
-        </tr>
-        <tr>
-          <td class="day font-weight-bold">Wednesday</td>
-          <td class="opens">8:30am</td>
-          <td>-</td>
-          <td class="closes">5:00pm</td>
-        </tr>
-        <tr>
-          <td class="day font-weight-bold">Thursday</td>
-          <td class="opens">8:30am</td>
-          <td>-</td>
-          <td class="closes">5:00pm</td>
-        </tr>
-        <tr>
-          <td class="day font-weight-bold">Friday</td>
-          <td class="opens">8:30am</td>
-          <td>-</td>
-          <td class="closes">5:00pm</td>
-        </tr>
-        <tr>
-          <td class="day font-weight-bold">Saturday</td>
-          <td class="opens">Closed</td>
-          <td></td>
-          <td class="closes"></td>
-        </tr>
-        <tr>
-          <td class="day font-weight-bold">Sunday</td>
-          <td class="opens">Closed</td>
-          <td> </td>
-          <td class="closes"></td>
-        </tr>
+        {{ end }}
       </table>
     </div>
   </div>
