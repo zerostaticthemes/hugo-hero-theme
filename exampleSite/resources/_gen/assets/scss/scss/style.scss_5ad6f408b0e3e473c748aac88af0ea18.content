@@ -6059,6 +6059,9 @@ ul.social {
 .hero-image-blend-overlay {
   background-blend-mode: overlay; }
 
+html {
+  scroll-behavior: smooth; }
+
 .bg-contain {
   background-size: contain; }
 
