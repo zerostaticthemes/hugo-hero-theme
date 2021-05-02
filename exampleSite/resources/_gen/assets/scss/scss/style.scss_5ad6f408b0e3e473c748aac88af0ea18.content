@@ -5708,22 +5708,18 @@ ul.social {
   padding: 0;
   align-items: center;
   justify-content: flex-start; }
-  ul.social svg {
-    fill: currentColor;
-    height: 16px;
-    width: 16px; }
   ul.social li {
     margin: 0;
     padding: 0;
     list-style: none;
-    margin-right: 30px; }
+    display: inline-block;
+    margin-right: 10px; }
     ul.social li:last-of-type {
       margin: 0; }
     ul.social li a {
       background-repeat: no-repeat;
       background-position: center center;
       background-size: auto;
-      padding: 8px;
       display: block; }
       ul.social li a span {
         font-size: 24px; }
