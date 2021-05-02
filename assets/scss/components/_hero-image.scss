@@ -64,3 +64,8 @@
 .hero-image-blend-overlay {
   background-blend-mode: overlay;
 }
+
+// Enable smooth scrolling (on hero-down click)
+html {
+ scroll-behavior: smooth;
+}
