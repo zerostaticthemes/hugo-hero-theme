@@ -17,7 +17,7 @@ $hamburger-layer-spacing       : 5px !default;
 $hamburger-layer-color         : $primary !default;
 $hamburger-layer-border-radius : 3px !default;
 $hamburger-hover-opacity       : 0.7 !default;
-$hamburger-active-layer-color  : #FFF !default;
+$hamburger-active-layer-color  : $primary !default;
 $hamburger-active-hover-opacity: $hamburger-hover-opacity !default;
 
 // To use CSS filters as the hover effect instead of opacity,

@@ -3,10 +3,9 @@
 Hero is a multi-page business theme with fullscreen hero images and fullwidth sections.
 
 [Live Demo](https://hugo-hero.netlify.com/) |
-[Installation](#installation) | 
 [Zerostatic Themes](https://www.zerostatic.io/theme/hugo-hero/)
 
-![Hugo Hero Theme screenshot](https://github.com/JugglerX/hugo-hero-theme/blob/master/images/screenshot-full.jpg)
+![Hugo Hero Theme screenshot](https://www.zerostatic.io/theme/hugo-hero/hugo-hero-screenshot.png)
 
 # Features
 

@@ -5371,7 +5371,7 @@ a.text-dark:hover, a.text-dark:focus {
   .hamburger.is-active .hamburger-inner,
   .hamburger.is-active .hamburger-inner::before,
   .hamburger.is-active .hamburger-inner::after {
-    background-color: #FFF; }
+    background-color: #1c3ed3; }
 
 .hamburger-box {
   width: 32px;
@@ -5448,11 +5448,8 @@ ol {
     align-items: center; }
   .header.header-absolute {
     position: absolute;
-    z-index: 10;
+    z-index: 100;
     width: 100%; }
-
-.lock-scroll .header.header-absolute {
-  position: static; }
 
 .footer {
   background: #43454d;

@@ -13,14 +13,14 @@
   }
   &.header-absolute {
     position: absolute;
-    z-index: 10;
+    z-index: 100;
     width: 100%;
   }
 }
-.lock-scroll {
-  .header {
-    &.header-absolute {
-      position: static;
-    }
-  }
-}
+// .lock-scroll {
+//   .header {
+//     &.header-absolute {
+//       position: static;
+//     }
+//   }
+// }
