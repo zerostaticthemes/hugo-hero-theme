@@ -83,12 +83,12 @@ This will create a fresh Hugo site in the folder `mynewsite`.
 Clone this repo into the themes folder
 ```
 cd mynewsite
-git clone https://github.com/jugglerx/hugo-hero-theme.git themes/hugo-hero-theme
+git clone https://github.com/zerostaticthemes/hugo-hero-theme.git themes/hugo-hero-theme
 ```
 
 ### Install theme from .zip file
 
-You can download the .zip file located here https://github.com/JugglerX/hugo-hero-theme/archive/master.zip.
+You can download the .zip file located here https://github.com/zerostaticthemes/hugo-hero-theme/archive/master.zip.
 
 Extract the downloaded .zip inside the `themes` folder. Rename the extracted folder from `hugo-hero-theme-master` -> `hugo-hero-theme`. You should end up with the following folder structure `mynewsite/themes/hugo-hero-theme`
 

@@ -4,6 +4,11 @@ title = "Hugo Hero Theme"
 themesDir = "../.."
 theme = "hugo-hero-theme"
 
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.55.0"
+    
 [params]
   google_analytics_id=""
 
