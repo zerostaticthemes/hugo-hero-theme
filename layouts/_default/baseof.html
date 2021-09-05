@@ -19,6 +19,16 @@
 
   {{ block "header_css" . }}{{ end }}
 
+
+  <!-- Inject custom CSS - see config.toml -->
+  {{ range .Site.Params.custom_css -}}
+      <link rel="stylesheet" href="{{ . | absURL }}">
+  {{- end }}
+
+  {{ partial "head.html" . }}
+
+  {{ partial "head_custom.html" . }}
+
 </head>
 
 <body class='page {{ block "body_classes" . }}{{ end }}'>
@@ -44,6 +54,11 @@
   {{ end }}
 
   {{ partial "google-analytics.html" . }}
+
+  <!-- Inject custom JS - see config.toml -->
+  {{ range .Site.Params.custom_js -}}
+  <script type="text/javascript" src="{{ . | absURL }}"></script>
+  {{- end }}
 
 </body>
 </html>

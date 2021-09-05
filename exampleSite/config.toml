@@ -4,12 +4,17 @@ title = "Hugo Hero Theme"
 themesDir = "../.."
 theme = "hugo-hero-theme"
 
+
+
 [module]
   [module.hugoVersion]
     extended = true
     min = "0.55.0"
     
 [params]
+  custom_css = ["css/custom.css"]
+  custom_js = ["js/custom.js"]
+
   google_analytics_id=""
 
   [params.homepage_meta_tags]
