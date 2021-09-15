@@ -19,7 +19,7 @@ Hero is a multi-page business theme with fullscreen hero images and fullwidth se
 
 ### Content Management
 
-- This themes content is now all editable via markdown files.
+- This theme's content is now all editable via markdown files.
 - Includes examples where multiple .md files are sourced in a single layout to create fullwidth sections that have different locations in the HTML.
 - The "Home" page uses multiple markdown files for the different homepage sections. It uses **headless bundles**.
 - The "About Us" page uses multiple markdown files for its different sections. It uses **leaf bundles** and **shortcodes**.
