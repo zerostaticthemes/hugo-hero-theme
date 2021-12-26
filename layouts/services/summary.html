@@ -1,7 +1,7 @@
 <div class="service service-summary">
   {{ if .Params.icon }}
   <div class="service-image">
-    <img src="{{ .Params.icon | relURL }}"/>
+    <img height="80" width="80" src="{{ .Params.icon | relURL }}" alt="{{ .Title }}" />
   </div>
   {{ end }}
   <div class="service-content">

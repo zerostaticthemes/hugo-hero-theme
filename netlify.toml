@@ -6,12 +6,3 @@
   HUGO_VERSION = "0.82.0"
   HUGO_THEME = "repo"
   HUGO_BASEURL = "/"
-
-[context.production.environment]
-  HUGO_GOOGLE_ANALYTICS_ID = "GA-XX"
-
-[context.deploy-preview.environment]
-  HUGO_VERSION = "0.82.0"
-
-[context.branch-deploy.environment] 
-  HUGO_VERSION = "0.82.0"
