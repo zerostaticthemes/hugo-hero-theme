@@ -4,105 +4,93 @@ Hero is a multi-page business theme with fullscreen hero images and fullwidth se
 
 [Live Demo](https://hugo-hero.netlify.com/) |
 [Zerostatic Themes](https://www.zerostatic.io/theme/hugo-hero/)
+Support our work - **Star this repo** ⭐✨💖
 
 ![Hugo Hero Theme screenshot](https://www.zerostatic.io/theme/hugo-hero/hugo-hero-screenshot.png)
 
-# Features
+## Features
 
-### Content Types
-
+**Content Types**
 - Services (Markdown)
 - Work/Portfolio (Markdown)
 - Features (Data)
 - About (Markdown, Single Page, Shortcodes)
 - Homepage (Markdown, Single Page, multiple .md files in one layout)
 
-### Content Management
-
+**Content Management**
 - This theme's content is now all editable via markdown files.
 - Includes examples where multiple .md files are sourced in a single layout to create fullwidth sections that have different locations in the HTML.
 - The "Home" page uses multiple markdown files for the different homepage sections. It uses **headless bundles**.
 - The "About Us" page uses multiple markdown files for its different sections. It uses **leaf bundles** and **shortcodes**.
 - "Services" & "Work" use markdown files with layouts for list, single and summary views.
 
-### Features
-
+**Features**
 - Full-width responsive design
-- Full-width/full-height hero image partial. Partial arguments include background-image, no background-image, background-image with overlay or just a solid color background.
+- Full-width/full-height hero image partial
 
-### SCSS
-
-- SCSS (Hugo Pipelines)
+**SCSS**
+- SCSS (Hugo Pipes)
 - Responsive design
 - Bootstrap 4 grid and media queries
 - The rest of the Bootstrap library is commented out by default but is ready to be @imported in the `style.scss`
 
-### Speed
-
+**Speed**
 - 100/100 Google Lighthouse speed score
 - Vanilla JS only
 - Minified CSS under 20KB
 - Minified JS under 20KB
 
-### Menu
+**SEO**
+- 100/100 Google Lighthouse SEO score
+- Configure Google Analytics in `config.toml`
+- Configure Google Analytics using env variable `HUGO_GOOGLE_ANALYTICS_ID` compatible with Netlify.
+- Configure meta tags and OG meta tags for the homepage in `config.toml`
+- Semantic HTML document structure
 
-- Responsive mobile menu managed in `config.toml`
+**Menu**
+- Responsive menu managed in `config.toml`
+- Animated hamburger menu on mobile
 
-### Content
-
+**Content**
 - Robust example content included
-- Royalty free images included
+- Royalty free illustrations included
 
-# Installation
-### Install Hugo
+## Installation
 
-To use this theme you will need to have Hugo installed. If you don't already have Hugo installed please follow the official [installation guide](https://gohugo.io/getting-started/installing/)
+**1. Install Hugo**
 
-### Check Hugo version (Hugo 0.51+ Extended is required)
+To use this theme you will first need to have Hugo installed. Please follow the official [installation guide](https://gohugo.io/getting-started/installing/)
 
-This theme uses [Hugo Pipes](https://gohugo.io/hugo-pipes/scss-sass/) to compile SCSS and minify assets. Please make sure you have the **Hugo Extended** version installed. If you are not using the extended version this theme will not not compile.
+⚠️ **Note:** Check your Hugo version - **Hugo Extended** is required!
 
-To check your version of Hugo, run:
+This theme uses [Hugo Pipes](https://gohugo.io/hugo-pipes/scss-sass/) to compile SCSS and minify assets which means if you not using the Hugo extended version this theme will not work. To check your version of Hugo, run  `hugo version`. Make sure you see __/extended__ after the version number, for example _Hugo Static Site Generator v0.82.0/extended darwin/amd64 BuildDate: unknown_ You do not need to use version v0.82.0 specifically, it just needs to have the _/extended_ part.
 
-```
-hugo version
-```
+**2. Create a new Hugo site**
 
-This will output the currently installed version of Hugo. Make sure you see `/extended` after the version number, for example `Hugo Static Site Generator v0.51/extended darwin/amd64 BuildDate: unknown` You do not need to use version v0.51 specifically, you can use any version of Hugo above 0.51. It just needs to have the `/extended` part
-
-### Create a new Hugo site
+This will create a fresh Hugo site in the folder `mynewsite`.
 
 ```
 hugo new site mynewsite
 ```
 
-This will create a fresh Hugo site in the folder `mynewsite`.
+**3. Install the theme**
 
-### Install theme with Git
+Download or git clone this theme into the sites themes folder `mynewsite/themes`. You should end up with the following folder structure `mynewsite/themes/hugo-hero-theme`
 
-Clone this repo into the themes folder
 ```
 cd mynewsite
 git clone https://github.com/zerostaticthemes/hugo-hero-theme.git themes/hugo-hero-theme
 ```
 
-### Install theme from .zip file
+**4. Copy the example content**
 
-You can download the .zip file located here https://github.com/zerostaticthemes/hugo-hero-theme/archive/master.zip.
-
-Extract the downloaded .zip inside the `themes` folder. Rename the extracted folder from `hugo-hero-theme-master` -> `hugo-hero-theme`. You should end up with the following folder structure `mynewsite/themes/hugo-hero-theme`
-
-### Copy example content
-
-Copy the entire contents of the `mynewsite/themes/hugo-hero-theme/exampleSite/` folder to root folder of your Hugo site, i.e., `mynewsite/`
-
-To copy the files using terminal, make sure you are still in the projects root, ie the `mynewsite` folder.
+Copy the entire contents of the `mynewsite/themes/hugo-hero-theme/exampleSite/` folder to root folder of your Hugo site, ie `mynewsite/`. To copy the files using terminal, make sure you are still in the projects root, ie the `mynewsite` folder.
 
 ```
 cp -a themes/hugo-hero-theme/exampleSite/. .
 ```
 
-### Update config.toml
+**5. Update config.toml**
 
 After you copy the `config.toml` into the root folder of your Hugo site you will need to update the `baseURL`, `themesDir` and `theme` values in `mynewsite/config.toml`
 
@@ -112,7 +100,7 @@ themesDir = "themes"
 theme = "hugo-hero-theme"
 ```
 
-### Run Hugo
+**6. Run Hugo**
 
 After installing the theme for the first time, generate the Hugo site.
 
@@ -130,7 +118,14 @@ hugo server
 
 Now enter [`localhost:1313`](http://localhost:1313) in the address bar of your browser.
 
-# Configuration
+## Deployment
+### Netlify
+
+Use Netlify to deploy this theme. This theme contains a valid and tested `netlify.toml` - Feel free to use the 1-click deploy below.
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/zerostaticthemes/hugo-serif-theme)
+
+## Configuring Theme
 
 ### Homepage meta tags
 
@@ -183,12 +178,22 @@ Add your google analytics ID to the `config.toml`
 
 You can edit and add main menu links in the `config.toml` under `[[menu.main]]`
 
-# Deploying to Netlify
+## Extras
+### License
 
-This theme includes a `netlify.toml` which is configured to deploy to Netlify from the `exampleSite` folder. See this discussion on how to deploy your site on Netlify from the `exampleSite` folder - https://discourse.gohugo.io/t/deploy-your-theme-to-netlify/15508
+- Don't create ports or new versions of this theme without asking me
+- You can't re-distribute or re-sell this theme as your own template
 
-Most likely if you are deploying to Netlify and created a new Hugo site or added this theme to an existing Hugo site then you are not deploying from the `exampleSite` directory and you can delete the `netlify.toml` file.
+### Credits 
 
-## License
+- Beautiful royalty free Illustrations by Icons8 - https://icons8.com/illustrations/style--pixeltrue
+- Stock images by Unsplash - https://unsplash.com/
+- Feature icons by Noun Project - https://thenounproject.com/
 
-If you fork or copy this theme, the LICENSE file and the copyright notice on line 3 (where I am listed as the author) must not be changed. You cannot just replace the copyright line with your own name. Attribution in your README.md or on your site is welcome but not required.
+## Other Hugo Themes by Zerostatic
+
+- [Hugo Whisper](https://github.com/zerostaticthemes/hugo-whisper-theme)
+- [Hugo Serif](https://github.com/zerostaticthemes/hugo-serif-theme)
+- [Hugo Winston](https://github.com/zerostaticthemes/hugo-winston-theme)
+- [Hugo Advance](https://www.zerostatic.io/theme/hugo-advance/)
+- [Hugo Paradigm](https://www.zerostatic.io/theme/hugo-paradigm/)

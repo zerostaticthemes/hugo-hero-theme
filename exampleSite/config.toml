@@ -7,7 +7,7 @@ theme = "hugo-hero-theme"
 [module]
   [module.hugoVersion]
     extended = true
-    min = "0.55.0"
+    min = "0.92.0"
     
 [params]
   google_analytics_id=""
@@ -37,7 +37,6 @@ theme = "hugo-hero-theme"
     name = "About"
     url = "/about/"
     weight = 3
-
 
 [[menu.main]]
     name = "History"
