@@ -4,7 +4,8 @@ Hero is a multi-page business theme with fullscreen hero images and fullwidth se
 
 [Live Demo](https://hugo-hero.netlify.com/) |
 [Zerostatic Themes](https://www.zerostatic.io/theme/hugo-hero/)
-Support our work - **Star this repo** ⭐✨💖
+
+<a href="https://www.buymeacoffee.com/zerostatic" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
 ![Hugo Hero Theme screenshot](https://www.zerostatic.io/theme/hugo-hero/hugo-hero-screenshot.png)
 
@@ -179,6 +180,7 @@ Add your google analytics ID to the `config.toml`
 You can edit and add main menu links in the `config.toml` under `[[menu.main]]`
 
 ## Extras
+
 ### License
 
 - Don't create ports or new versions of this theme without asking me
@@ -190,10 +192,14 @@ You can edit and add main menu links in the `config.toml` under `[[menu.main]]`
 - Stock images by Unsplash - https://unsplash.com/
 - Feature icons by Noun Project - https://thenounproject.com/
 
-## Other Hugo Themes by Zerostatic
+### Other Hugo Themes by Zerostatic
 
 - [Hugo Whisper](https://github.com/zerostaticthemes/hugo-whisper-theme)
 - [Hugo Serif](https://github.com/zerostaticthemes/hugo-serif-theme)
 - [Hugo Winston](https://github.com/zerostaticthemes/hugo-winston-theme)
 - [Hugo Advance](https://www.zerostatic.io/theme/hugo-advance/)
 - [Hugo Paradigm](https://www.zerostatic.io/theme/hugo-paradigm/)
+
+
+🇦🇺 **Made in Australia** by Robert Austin - Support our work - **Star this repo** ⭐
+
