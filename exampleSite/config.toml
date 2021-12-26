@@ -1,4 +1,4 @@
-baseURL = "www.example.com"
+baseURL = "https://www.example.com/"
 languageCode = "en-us"
 title = "Hugo Hero Theme"
 themesDir = "../.."
