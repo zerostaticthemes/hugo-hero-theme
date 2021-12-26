@@ -19,7 +19,7 @@ Hero is a multi-page business theme with fullscreen hero images and fullwidth se
 
 ### Content Management
 
-- This themes content is now all editable via markdown files.
+- This theme's content is now all editable via markdown files.
 - Includes examples where multiple .md files are sourced in a single layout to create fullwidth sections that have different locations in the HTML.
 - The "Home" page uses multiple markdown files for the different homepage sections. It uses **headless bundles**.
 - The "About Us" page uses multiple markdown files for its different sections. It uses **leaf bundles** and **shortcodes**.
@@ -94,7 +94,7 @@ Extract the downloaded .zip inside the `themes` folder. Rename the extracted fol
 
 ### Copy example content
 
-Copy the entire contents of the `mynewsite/themes/hugo-hero-theme/exampleSite/` folder to root folder of your Hugo site, ie `mynewsite/`
+Copy the entire contents of the `mynewsite/themes/hugo-hero-theme/exampleSite/` folder to root folder of your Hugo site, i.e., `mynewsite/`
 
 To copy the files using terminal, make sure you are still in the projects root, ie the `mynewsite` folder.
 
@@ -171,7 +171,7 @@ You can set meta tags on a per template basis using a block. For example, you mi
 
 ### Google Analytics
 
-Add you google analytics ID to the `config.toml`
+Add your google analytics ID to the `config.toml`
 
 ```
 // config.toml
@@ -191,4 +191,4 @@ Most likely if you are deploying to Netlify and created a new Hugo site or added
 
 ## License
 
-If you fork or copy this theme the LICENSE file and the copyright notice on line 3 (where I am listed as the author) must not be changed. You cannot just replace the copyright line with your own name. Attribution in your README.md or on your site is also welcome but not required.
+If you fork or copy this theme, the LICENSE file and the copyright notice on line 3 (where I am listed as the author) must not be changed. You cannot just replace the copyright line with your own name. Attribution in your README.md or on your site is welcome but not required.
