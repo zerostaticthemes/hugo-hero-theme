@@ -17,13 +17,16 @@
     <div class="col-12 col-md-8">
       {{ .Content }}
       <ul>
+        {{ with .Site.Data.contact.phone }}
         <li><strong>Phone: </strong>{{ .Site.Data.contact.phone }}</li>
+        {{ end }}
         <li><strong>Email: </strong><a href="mailto:{{ .Site.Data.contact.email }}">
             {{ .Site.Data.contact.email }}</a></li>
         {{ if .Site.Data.contact.address }}
         <li style="white-space: pre-wrap;"><strong>Address: </strong><br>{{ .Site.Data.contact.address }}</li>
         {{ end }}
       </ul>
+      {{ with .Site.Data.contact.hours }}
       <h4 class="mt-4">Business Hours</h4>
       <table class="table table-sm opening-hours-table">
         {{ range .Site.Data.contact.hours }}
@@ -35,6 +38,7 @@
         </tr>
         {{ end }}
       </table>
+      {{ end }}
     </div>
   </div>
 </div>
