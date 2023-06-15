@@ -6,7 +6,8 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    
     @include media-breakpoint-up(sm) {
       justify-content: space-between;
       flex-direction: row;
@@ -22,6 +23,14 @@
     @include media-breakpoint-up(sm) {
       margin: 0;
       flex: 0 0 120px;
+    }
+  }
+  .footer-menu {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    @include media-breakpoint-up(sm) {
+      margin-top: 0;
     }
   }
   ul {
@@ -66,7 +75,6 @@
         list-style: none;
         a {
           display: inline-block;
-          height: 40px;
           padding: 10px 8px 10px 8px;
           font-weight: 300;
         }

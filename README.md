@@ -91,17 +91,7 @@ Copy the entire contents of the `mynewsite/themes/hugo-hero-theme/exampleSite/` 
 cp -a themes/hugo-hero-theme/exampleSite/. .
 ```
 
-**5. Update config.toml**
-
-After you copy the `config.toml` into the root folder of your Hugo site you will need to update the `baseURL`, `themesDir` and `theme` values in `mynewsite/config.toml`
-
-```
-baseURL = "/"
-themesDir = "themes"
-theme = "hugo-hero-theme"
-```
-
-**6. Run Hugo**
+**65. Run Hugo**
 
 After installing the theme for the first time, generate the Hugo site.
 
@@ -122,9 +112,9 @@ Now enter [`localhost:1313`](http://localhost:1313) in the address bar of your b
 ## Deployment
 ### Netlify
 
-Use Netlify to deploy this theme. This theme contains a valid and tested `netlify.toml` - Feel free to use the 1-click deploy below.
-
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/zerostaticthemes/hugo-hero-theme)
+
+This theme includes a `netlify.toml` which is [configured to deploy to Netlify](https://discourse.gohugo.io/t/deploy-your-theme-to-netlify/15508) from the `exampleSite` folder. If you have installed this theme into a new Hugo site and the exampleSite folder was copied or removed, you should delete the `netlify.toml` file.
 
 ## Configuring Theme
 
@@ -132,8 +122,8 @@ Use Netlify to deploy this theme. This theme contains a valid and tested `netlif
 
 Often a homepage requires special meta tags such as a meta description or og meta data for twitter, facebook etc. You can configure these values in the `config.toml`
 
-```
-// config.toml
+```toml
+# config.toml
 ...
 
   [params.homepage_meta_tags]
@@ -169,8 +159,8 @@ You can set meta tags on a per template basis using a block. For example, you mi
 
 Add your google analytics ID to the `config.toml`
 
-```
-// config.toml
+```toml
+# config.toml
 [params]
   google_analytics_id="UA-132398315-1"
 ```
@@ -179,27 +169,28 @@ Add your google analytics ID to the `config.toml`
 
 You can edit and add main menu links in the `config.toml` under `[[menu.main]]`
 
-## Extras
-
-### License
+## License
 
 - Don't create ports or new versions of this theme without asking me
 - You can't re-distribute or re-sell this theme as your own template
 
-### Credits 
+## Credits
 
 - Beautiful royalty free Illustrations by Icons8 - https://icons8.com/illustrations/style--pixeltrue
 - Stock images by Unsplash - https://unsplash.com/
 - Feature icons by Noun Project - https://thenounproject.com/
 
-### Other Hugo Themes by Zerostatic
+**More Hugo Themes by Zerostatic**
 
-- [Hugo Whisper](https://github.com/zerostaticthemes/hugo-whisper-theme)
-- [Hugo Serif](https://github.com/zerostaticthemes/hugo-serif-theme)
-- [Hugo Winston](https://github.com/zerostaticthemes/hugo-winston-theme)
-- [Hugo Advance](https://www.zerostatic.io/theme/hugo-advance/)
-- [Hugo Paradigm](https://www.zerostatic.io/theme/hugo-paradigm/)
+- [Hugo Hero](https://github.com/zerostaticthemes/hugo-hero-theme) - Open-source business theme
+- [Hugo Whisper](https://github.com/zerostaticthemes/hugo-whisper-theme) - Open-source documentation theme
+- [Hugo Serif](https://github.com/zerostaticthemes/hugo-serif-theme) - Open-source business theme
+- [Hugo Winston](https://github.com/zerostaticthemes/hugo-winston-theme) - Open-source blog theme
+- [Hugo Advance](https://www.zerostatic.io/theme/hugo-advance/) - Premium advanced multi page business & marketing theme
+- [Hugo Paradigm](https://www.zerostatic.io/theme/hugo-paradigm/) - Premium landing page + site builder theme
+- [Hugo Lever](https://www.zerostatic.io/theme/hugo-lever/) - Premium personal / bio theme
+- [Hugo Shard](https://www.zerostatic.io/theme/hugo-lever/) - Premium SAAS / landing page theme
 
+**Find hundreds more Hugo themes on Built At Lightspeed**
 
-🇦🇺 **Made in Australia** by Robert Austin - Support our work - **Star this repo** ⭐
-
+[<img alt="Built At Lightspeed Hugo themes directory screenshot" width="400px" src="https://www.zerostatic.io/images/builtatlightspeed-hugo-themes.jpg" />](https://builtatlightspeed.com/category/hugo)
