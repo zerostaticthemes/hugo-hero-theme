@@ -5,8 +5,6 @@ Hero is a multi-page business theme with fullscreen hero images and fullwidth se
 [Live Demo](https://hugo-hero.netlify.com/) |
 [Zerostatic Themes](https://www.zerostatic.io/theme/hugo-hero/)
 
-<a href="https://www.buymeacoffee.com/zerostatic" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
-
 ![Hugo Hero Theme screenshot](https://www.zerostatic.io/theme/hugo-hero/hugo-hero-screenshot.png)
 
 ## Features
