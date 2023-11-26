@@ -4,3 +4,4 @@ node_modules
 public
 resources
 local_git_config.sh
+.hugo_build.lock
