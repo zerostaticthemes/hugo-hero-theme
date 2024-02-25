@@ -30,7 +30,7 @@ Hero is a multi-page business theme with fullscreen hero images and fullwidth se
 **SCSS**
 - SCSS (Hugo Pipes)
 - Responsive design
-- Bootstrap 4 grid and media queries
+- Bootstrap 5.3 grid and media queries
 - The rest of the Bootstrap library is commented out by default but is ready to be @imported in the `style.scss`
 
 **Speed**
