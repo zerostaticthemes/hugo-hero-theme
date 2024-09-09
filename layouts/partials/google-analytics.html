@@ -1,4 +1,4 @@
-{{- if .Site.IsServer -}}
+{{- if hugo.IsServer -}}
   <!-- Dont add Google analytics to localhost -->
 {{ else }}
   {{ $gid := (getenv "HUGO_GOOGLE_ANALYTICS_ID") }}
